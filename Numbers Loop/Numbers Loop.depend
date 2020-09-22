@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1600767390 source:/root/Desktop/Numbers Loop/main.c
+	<stdio.h>
+	<stdlib.h>
+
