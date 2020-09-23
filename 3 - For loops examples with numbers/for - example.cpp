@@ -1,5 +1,5 @@
-//esempio n^1: stampa di una successione di numeri sommando la variabile 
-//'s' con il valore corrente dell'indice del for 
+// example n ^ 1: print a sequence of numbers adding the variable
+// 's' with the current value of the for index 
 
 #include <stdio.h>
 
@@ -8,13 +8,13 @@ int main() {
 	printf("1^ esempio");
 	printf(" \n");
 	
-	int s = 0;		//sommatoria: la nostra variabile di test
-	int n = 10;		//numero massimo
+	int s = 0;		//summary: our variable test
+	int n = 10;		//maximum number
 
 	for (int i = 0; i < n; i++) {
 
 		s = s + i;
-		printf(" \n"); //per far andare a capo ogni num durante la stampa dei valori
+		printf(" \n"); //to wrap each number when printing values
 		printf("%d", s);
 	}
 	printf(" \n");
