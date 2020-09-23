@@ -3,8 +3,7 @@
 
 int main()
 {
-    int num1 = 1; /*Variables, this time num2 is a period number
-                    this time num2 is a period number*/
+    int num1 = 1; //Variables, this time num2 is a period number
     float num2 = 1.5;
     int   num3 = 30;
 
