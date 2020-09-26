@@ -1,12 +1,12 @@
 #include<stdio.h>
 
 /*
-uso dello switch - esempio: 
-In questo esempio andiamo ad utilizzare una semplice struttura condizionale per verificare se il numero 
-che l'utente mette è effettivamente quello. L'esercizio può esssere fatto anche con dei semplici if - statement.
-Noi in questo caso lo facciamo con lo switch: una sorta di menu in poche parole
+using the switch - example:
+In this example we are going to use a simple conditional structure to check if the number
+what the user puts is actually that. The exercise can also be done with simple if - statements.
+In this case we do it with the switch: a sort of menu in a nutshell
 
-Piersilvio Spicoli - uniba informatica
+Piersilvio Spicoli - informatics uniba
 */
 
 
@@ -25,25 +25,25 @@ int main(){
 		
 		case 1: //qui si confronta il cont. della variabile con il valore  //NOTA: gli statement switch utilizzano esclusiavmente variabili integer, non di altri tipi
 		
-			printf("il numero che hai selezionato è : %d", numero); //stampa
+			printf("il numero che hai selezionato Ã¨ : %d", numero); //stampa
 		break;	//il programma esce dalla condizione e va in pausa
 		
 		//ripetiamo per 3 volte
 		
 		case 2:
-			printf("il numero che hai selezionato è : %d", numero);
+			printf("il numero che hai selezionato Ã¨ : %d", numero);
 		break;
 		case 3:
-			printf("il numero che hai selezionato è : %d", numero);
+			printf("il numero che hai selezionato Ã¨ : %d", numero);
 		break;
 		case 4:
-			printf("il numero che hai selezionato è : %d", numero);
+			printf("il numero che hai selezionato Ã¨ : %d", numero);
 		break;
 		
-		//nel caso il numero non sia corretto, allora si può aggiungere un instanza di default seguendo la sintassi che viene
-		//NOTA: non è obbligatorio inserirlo
+		//nel caso il numero non sia corretto, allora si puÃ² aggiungere un instanza di default seguendo la sintassi che viene
+		//NOTA: non Ã¨ obbligatorio inserirlo
 		default:
-			printf("il numero non è compreso nel range. riprova! \n");
+			printf("il numero non Ã¨ compreso nel range. riprova! \n");
 		break;
 	}
 }
