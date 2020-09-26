@@ -1,12 +1,12 @@
 #include<stdio.h>
 /*
-operatori algebrici:
-in questo esempio creamo una semplice condizione
-che ci consente di capire se l'età che inseriamo 
-riesca a dire se siamo maggiorenni oppure no
+algebraic operators:
+in this example we create a simple condition
+which allows us to understand if the age we enter
+can tell if we are of age or not
 
-ne utilizzeremo solo uno, considerando che chi legga sappia 
-in minima parte gli operatori (<, >, =, <=, =>)
+we will use only one, considering that the reader knows
+minimally the operators (<,>, =, <=, =>)
 
 spicoli piersilvio - uniba informatica
 */
@@ -20,8 +20,8 @@ int main(){
 	
 	if(age < 18){
 		
-		printf("sei minorenne!");
+		printf("you are a minor!");
 	}else{
-		printf("sei maggiorenne!");
+		printf("you are of age!");
 	}
 }
