@@ -35,16 +35,14 @@
                for (i = 0; i < num_elem; i++) { //acquiring input for n elements desired from the user.
 
                    printf("Insert the name\n");
-                     fflush(stdin);
                       gets(str[i].name);
 
                        printf("Insert the surname\n");
-                         fflush(stdin);
                            gets(str[i].surname);
 
 
                            printf("Insert the number for this element\n");
-                           scanf("%d", &str[i].num);
+                             scanf("%d", &str[i].num);
 
 
        }
@@ -113,6 +111,8 @@
 
 
  int main(void) {
+    
+    setbuf(stdout, NULL); //cleaning the buffer for i/o operations with gets.
 
     input();
 
