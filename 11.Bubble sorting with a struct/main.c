@@ -112,7 +112,7 @@
 
  int main(void) {
     
-    setbuf(stdout, NULL); //cleaning the buffer for i/o operations with gets.
+    setvbuf(stdout, NULL, _IONBF, 0); //cleaning the buffer for i/o operations with gets.
 
     input();
 
