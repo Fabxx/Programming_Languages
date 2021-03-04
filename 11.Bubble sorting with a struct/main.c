@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #define MAX 100
 
 /*A simple program that orders structure elements with bubble sort algorithm, based on the number of the integer related to each
