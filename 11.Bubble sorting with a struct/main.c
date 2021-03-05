@@ -35,9 +35,11 @@
                for (i = 0; i < num_elem; i++) { //acquiring input for n elements desired from the user.
 
                    printf("Insert the name\n");
+                      fflush(stdin);
                       gets(str[i].name);
 
                        printf("Insert the surname\n");
+                              fflush(stdin);
                            gets(str[i].surname);
 
 
@@ -111,9 +113,7 @@
 
 
  int main(void) {
-    
-    setvbuf(stdout, NULL, _IONBF, 0); //cleaning the buffer for i/o operations with gets.
-
+  
     input();
 
     bubble_sort();
