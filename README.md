@@ -9,3 +9,7 @@ Currently working on: C, C++, Python.
 Thank you!!
 
 Happy coding!!
+
+![](c.png)
+![](c++.png)
+![](python.png)
