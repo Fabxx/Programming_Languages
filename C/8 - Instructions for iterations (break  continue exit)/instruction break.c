@@ -1,21 +1,21 @@
 #include<stdio.h>
 
 /*
-l'istruzione break:
-interrompe le iterazioni di una struttura ciclica ( for, while ) prima del tempo e viene 
-usata per forzare l'uscita dla ciclo. 
-Solitamente viene sempre associata ad una condizione 'if'
+the break statement:
+breaks iterations of a loop structure (for, while) ahead of time and comes
+used to force the cycle to exit.
+It is usually always associated with an 'if' condition
 
-ovviamente non viene soltanto usata all'interno dei cicli, poichè quando entra in esecuzione
-mette in attesa il programma, cioè il file exe
+obviously it is not only used inside the loops, as when it comes into execution
+puts the program, ie the exe file, on hold
 
-piersilvio spicoli - uniba informatica
+piersilvio spicoli - uniba informatic department.
 */
 
 int main(){
 	/*
-	stampiamo una successione di simboli (@, #) da 1 a 10
-	usando due cicli:
+	we print a succession of symbols (@, #) from 1 to 10
+	using two loops:
 	- while
 	- do-while
 	*/
@@ -25,19 +25,19 @@ int main(){
 		
 		printf("# ");
 		
-		if(variableCount == 5){ break; } //se ci troviamo alla quinta iterazione, allora ferma il ciclo		
+		if(variableCount == 5){ break; } //if we are in the fifth iteration, then it stops the loop		
 		
-		variableCount++; //incremento
+		variableCount++; //increasement.
 	}
 	/*
-	uscendo dal ciclo while con break, la variableCount riamane ferma al valore di 5.
-	usando il do-while terminiamo la successione con un simbolo dverso arrivando fino a 9, comprendendo che siam partiti da 1.
+		exiting the while loop with break, the variableCount stops at the value of 5.
+		using the do-while we end the sequence with a reverse symbol reaching 9, understanding that we started from 1. 
 	*/
 	do{
 		
 		printf(" @");
 		
-		if(variableCount == 9){ break; } //confronta, se vero allora esce dal ciclo	
+		if(variableCount == 9){ break; } //comparison, if it's true it exits the cicle.	
 		
 		variableCount++;
 		
