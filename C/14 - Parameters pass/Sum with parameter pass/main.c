@@ -26,15 +26,9 @@ void calcs(int numbers[MAX]) {
 
             printf("Insert the numbers\n");
             scanf("%d", &numbers[i]);
+             
+             sum = sum + numbers[i];
 
         }
-
-
-            for (i = 0; i < MAX; i++) {
-
-                sum = sum + numbers[i];
-
-            }
-
                 printf("Sum:%d\n", sum);
 }
