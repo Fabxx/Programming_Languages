@@ -19,28 +19,26 @@ Piersilvio Spicoli - uniba informatica
 
 int main(){
 	
-	int numero; //variable NOTE: must be of type int!
+	int number; //variable NOTE: must be of type int!
 	
 	printf("Example n^5 \n");
-	printf("inserisci un numero: "); //input
-	scanf("%f", &numero);
+	printf("insert a number\n: "); //input
+	scanf("%f", &number);
 	
-	printf("\n");
-	
-	if(numero%2 == 0){    
+	if(number%2 == 0){    
 	
 	/*
 	'number% 2' is an operation that allows us to calculate the remainder of the division.
 	If we divide the number / 2, and the remainder equals zero, the number will be even.
 	If instead the division has the remainder, then that number will be odd
 	
-	NOTE: the% operator is called modulo, and allows us to calculate the remainder of a division of any data type (int)
+	NOTE: the% operator is called module, and allows us to calculate the remainder of a division of any data type (int)
 	
 	*/
 		
-		printf("il numero è pari!");
+		printf("The numbers is even.\n");
 	}else{
 		
-		printf("il numero è dispari!");
+		printf("The number is odd.\n");
 	}
 }

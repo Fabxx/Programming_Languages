@@ -19,13 +19,10 @@ int main() {
 
             scanf("%d", &arr[i]); //we get all the elements for the array with the i index for the position inside arr.
 
+             sum = sum + arr[i]; //same thing as before, but this time we sum each value in i position to sum.
+
         }
 
-            for (i = 0; i < SIZE; i++) { //same thing as before, but this time we sum each value in i position to sum.
-
-                somma = somma + arr[i];
-
-            }
                 printf("Sum:%d\n", sum);
 
                 system("pause");
@@ -33,3 +30,4 @@ int main() {
                 return 0;
 
 } //end of function.
+

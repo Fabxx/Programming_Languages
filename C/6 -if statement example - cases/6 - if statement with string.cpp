@@ -12,23 +12,23 @@ spicoli piersilvio - uniba informatica
 */
 int main(){
 	
-	char stringa1[50], stringa2[50]; 
+	char string1[50], string2[50]; 
 	
 	printf("stringa n^1: \n");
-	scanf("%s", stringa1);
+	scanf("%s", string1);
 	printf("stringa n^2: \n");		//input
-	scanf("%s", stringa2);
+	scanf("%s", string2);
 	
-	if(strcmp(stringa1, stringa2) == 0){
+	if(strcmp(string2, string2) == 0){ //comparison of the two strings with strcmp function. == 0 because strcmp returns 0 value when the two strings are equal.
 		
-		printf("le stringhe sono uguali ! \n");
-		printf("%s ", stringa1);
+		printf("The stirngs are the same! \n");
+		printf("%s ", string1);
 		printf("%s", stringa2);
 		
 	}else{
 		
-		printf("le stringhe non sono uguali ! \n");
-		printf("%s ", stringa1);
-		printf("%s", stringa2);
+		printf("The strings are different! \n");
+		printf("%s ", string1);
+		printf("%s", string2);
 	}
 }
