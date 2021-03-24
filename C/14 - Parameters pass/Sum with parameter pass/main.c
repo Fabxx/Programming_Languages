@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #define MAX 2
 
-void calcs (int numbers[MAX]); //declaration of void function with the parameters
+void calcs (int numbers[]); //declaration of void function with the parameters
 
 int main(void) { //main function
 
@@ -17,7 +17,7 @@ int main(void) { //main function
 }
 
 
-void calcs(int numbers[MAX]) {
+void calcs(int numbers[]) {
 
     int i;
     int sum;
