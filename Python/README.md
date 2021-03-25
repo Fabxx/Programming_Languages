@@ -7,3 +7,5 @@ These projects very clearly explain you some of the basics of python programming
 Thank you!!
 
 Happy coding!!
+
+![](python.png)
