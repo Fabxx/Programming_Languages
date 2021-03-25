@@ -12,4 +12,4 @@ Happy coding!!
 
 Our Discord Group: https://discord.gg/E3SkYGJhju
 
-![](logo.png) 
+![](logo.jpg) 
