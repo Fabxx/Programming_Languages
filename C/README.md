@@ -7,3 +7,5 @@ These projects very clearly explain you some of the basics of C programming and 
 Thank you!!
 
 Happy coding!!
+
+![](c.png)
