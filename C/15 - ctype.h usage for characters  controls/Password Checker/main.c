@@ -35,6 +35,6 @@ int main() { //main function.
                                 puts("Password is valid.\n");
                                 puts(word);
                        } else {
-                        puts("Password not vlaid.\n");
+                        puts("Password not valid.\n");
                 }
 }
