@@ -21,7 +21,7 @@ int main() { //main function.
 
             if (strlen(word) <= SIZE) { /*if the lenght of the word scannes is lower/equal to the array size.*/
 
-                for (i = 0; i < SIZE; i++) {
+                for (i = 0; i < SIZE; i++) { //must check limit on constant size, not strlen limit. or else it will crash.
 
                    /*We sum the values for each position of the characters on isupper/digit functions as parameters*/
 
