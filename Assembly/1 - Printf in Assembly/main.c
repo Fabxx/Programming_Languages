@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Simple sum in ASM assembly*/
+/*Simple sum in ASM assembly.*/
 
 int main()
 {
