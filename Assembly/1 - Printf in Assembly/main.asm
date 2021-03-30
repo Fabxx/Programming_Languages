@@ -1,14 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Simple printf in  assembly.*/
+:Simple printf in  assembly.
 
 #include <stdio.h>
 int main() {
    return printf("%d\n", 1);
 }
 
-//assembly matching code from C.
+:assembly matching code from C.
 
 .file   "test.c"
         .section        .rodata
