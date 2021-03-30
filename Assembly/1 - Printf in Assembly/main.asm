@@ -1,20 +1,31 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*Simple sum in ASM assembly.*/
+/*Simple printf in  assembly.*/
 
-int main()
-{
-        int foo = 10, bar = 15; //variables.
-
-    asm volatile("addl  %%ebx,%%eax" //function in assembler to sum.
-
-                             :"=a"(foo) //we assign to a the foo value, to b the bar value.
-
-                             :"a"(foo), "b"(bar)
-
-                             ); //end of ASM.
-
-        printf("foo + bar = %d\n", foo); //we print the final value of foo.
-        return 0;
+#include <stdio.h>
+int main() {
+   return printf("%d\n", 1);
 }
+
+//assembly matching code from C.
+
+.file   "test.c"
+        .section        .rodata
+.LC0:
+        .string "%d\n"
+        .text
+        .globl  main
+        .type   main, @function
+main:
+        pushq   %rbp
+        movq    %rsp, %rbp
+        movl    $1, %esi
+        movl    $.LC0, %edi
+        movl    $0, %eax
+        call    printf
+        popq    %rbp
+        ret
+        .size   main, .-main
+        .ident  "GCC: (GNU) 6.1.1 20160602"
+        .section        .note.GNU-stack,"",@progbits
