@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-#include <string.h>
+
 
 #define SIZE 3 //array size
 
