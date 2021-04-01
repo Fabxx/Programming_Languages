@@ -3,8 +3,6 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
-
 #define SIZE 3 //array size
 
 int main() { //main function.
@@ -28,6 +26,12 @@ int main() { //main function.
                     is_upper = is_upper + isupper(word[i]);
                     is_digit = is_digit + isdigit(word[i]);
 
+
+                    if (is_upper == 1 && is_digit == 1) {
+
+                        i = SIZE; //we force the exit from the cicle by setting the index to the array size.
+                                  //when a digit and a upper word is detected, so we don't check everytime in the whozle array.
+                    }
             }
         }
                        if (is_upper == 1 && is_digit == 1) {
@@ -36,5 +40,5 @@ int main() { //main function.
                                 puts(word);
                        } else {
                         puts("Password not valid.\n");
-                }
+        }
 }
