@@ -1,5 +1,6 @@
 GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccFtoMGI.s 			page 1
-
+   
+   ;Equivalent of: https://github.com/Fabio-Git-dev/Programming_Languages/blob/master/C/4%20-Operations%20with%20numbers/Sum%20in%20printf/main.c
 
    1              		.file	"main.c"
    3              		.section .rdata,"dr"
