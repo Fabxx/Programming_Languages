@@ -1,5 +1,6 @@
 GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccVwzd2m.s 			page 1
-
+   
+   ;Equivalent of: https://github.com/Fabio-Git-dev/Programming_Languages/blob/master/C/11.Bubble%20sorting%20with%20a%20struct/main.c
 
    1              		.file	"main.c"
    2              		.comm	str, 20400, 5
