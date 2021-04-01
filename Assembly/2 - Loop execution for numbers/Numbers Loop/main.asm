@@ -1,5 +1,5 @@
 GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\cchpWtrK.s 			page 1
-
+;For loop equivalend of https://github.com/Fabio-Git-dev/Programming_Languages/blob/master/C/2%20-%20Loop%20execution%20for%20numbers/Numbers%20Loop/main.c
 
    1              		.file	"main.c"
    3              		.section .rdata,"dr"
