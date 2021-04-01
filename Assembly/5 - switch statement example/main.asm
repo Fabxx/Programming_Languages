@@ -1,6 +1,7 @@
 GAS LISTING C:\Users\ADMINI~1\AppData\Local\Temp\ccWExpNr.s 			page 1
-
-
+   
+   ;Equivalent of: https://github.com/Fabio-Git-dev/Programming_Languages/blob/master/C/5%20-%20switch%20statement%20example/main.c
+   
    1              		.file	"main.c"
    3              		.section .rdata,"dr"
    4              	.LC0:
