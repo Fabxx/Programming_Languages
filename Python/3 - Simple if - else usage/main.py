@@ -1,4 +1,4 @@
-/*Showing a simple usage about the if-else statement*/
+#Showing a simple usage about the if-else statement
 a = int(input("enter first number: "))
 b = int(input("enter second number: "))
 
