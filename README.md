@@ -1,13 +1,46 @@
 # Programming Languages.
 
-# Giving support/help
+## About the Project
+This project provides basic examples of many programming languages and briefly covers major topics for beginners. These examples are made to help beginners understand and see samples of the programming language they are trying to learn. Currently we are working on the following languages: Assembly x86/64, C, C++, Python, Arduino.
 
-These projects very clearly explain you some of the basics for the programming languages, and briefly covers all major topics for the beginners. These projects are made to help the understanding of the code for beginners that are practicing. If you want to contribute with this little "hobbie project", simply do a issue report about the syntax if there's a mistake, or do a pull request about new functions. NOTE: If you have to add stuff for python, make the folders inside the Python folder or C++ folder like chapters based on the functions you want to use, see C folder for an example.
+## Contributing
+If you want to contribute to this little "hobby project", either file a issue report (if there's a syntax mistake for example) or do a pull request to provide a new code. NOTE: view the C folder to see a good example. Not only should all the code for a specific programming language be in its respective folder (i.e. C, Python, etc.), but also the topics you want to cover should be their own labeled folder (like chapters of a textbook).
 
-Currently working on: C, C++, Python.
+## Roadmap
+View the code within the C folder. Add code examples for the other programming languages that follow the structure of the C folder. 
 
-Thank you!!
+## Getting Started
+To actually make a contribution, follow the README of this repo: 
+https://github.com/firstcontributions/first-contributions
 
-Happy coding!!
+Anything with carrots (i.e. <>) should be replaced by actual text. For example: <your-branch-name> could be print-statements-in-c.
 
-![](c.png) ![](c++.png)  ![](python.png)
+Essentially, you'll want to:
+1. Fork the repo
+2. Clone the repo
+    - git clone <https-link-here>
+3. Create a branch
+    - cd Programming_Languages
+    - git checkout -b <your-branch-name>
+4. Make your necessary changes
+    - Add a topic folder under the specific langauge
+        - ex: "1 - Usage of Variables and Printf"
+    - Add files with the actual code under the correct parent file
+        - ex: "example2.c"
+5. Add changes to branch
+    - git add -A
+6. Commit changes to branch 
+    - git commit -m "commit message here"
+7. Push changes to github
+    - git push origin <your-branch-name>
+8. If you go to your repository on GitHub, you'll see a "Compare & pull" request button. Click on that button.
+9. Now submit the pull request (PR).
+10. If I accept your PR, then it will now be in the code, otherwise I will leave comments on how to improve your PR.
+
+## Contact
+My discord: Fab_#4870
+Our Discord Group: https://discord.gg/E3SkYGJhju
+
+Thank you! Happy coding!!
+
+![](logo.jpg) 
