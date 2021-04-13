@@ -1,4 +1,4 @@
-/*For loop with array iteration*/
+#For loop with array iteration
 
 heroes = ['Superman', 'Batman','Green Lantern']
 
