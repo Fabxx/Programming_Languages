@@ -1,7 +1,0 @@
-/*Simple for loop*/
-
-#vegetables list
-veggies = ["cabbage","carrots","broccoli"]
-for a in veggies
-	print(a)
-
