@@ -1,4 +1,4 @@
-/*Simple while loop*/
+#Simple while loop
 
 
 i = 0
