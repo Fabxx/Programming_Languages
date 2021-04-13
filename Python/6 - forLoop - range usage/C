@@ -1,4 +1,0 @@
-/*For loop with the rane function*/
-
-for x in range(1,10):
-	print(x)
