@@ -1,9 +1,11 @@
+/*This program shows how to print a matrix of numbers in C, by putting numbers*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #define ROW 2
 #define COLUMN 2
 
-/*This program shows how to print a matrix of numbers in C, by putting numbers*/
+
 void input();
 
 void input() {
