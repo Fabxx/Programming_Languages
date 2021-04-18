@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int i = 0;
-    // prints the numbers 0-6
+    // prints the numbers 0-6.
     // notice how numbers 7-10 aren't printed
     while (i != 10){
         cout << i << " ";
