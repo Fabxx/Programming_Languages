@@ -7,7 +7,7 @@ int main () {
     cout << "What grade in Calculus did you get? " << endl;
     cout << "Only enter the letters A, B, C, D, or F: " << endl;
     cin >> grade;
-
+  // switching the cases with single chars, in this case we used the char grade as a varaible.
    switch(grade) {
       case 'A' :
         cout << "Excellent!" << endl; 
