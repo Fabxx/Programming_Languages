@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // prints the numbers 0-6
+    // prints the numbers 0-6.
     // notice how numbers 7-10 aren't printed
     for (int i = 0; i < 10; i++){
         cout << i << " ";
