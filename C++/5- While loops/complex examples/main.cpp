@@ -10,7 +10,7 @@ int main()
     while (i != 0){
         cout << i << endl;
         i -= 1;
-        // print 
+        // print. 
     }
     cout << "\n";
 
