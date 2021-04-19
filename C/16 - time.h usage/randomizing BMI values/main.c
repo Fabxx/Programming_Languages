@@ -58,7 +58,7 @@ void rand_bmi() {
         for (i = 0; i < MAX; i++) {
 
 
-            arr[i].randheight = rand() % (200 - 160 + 1) + 160; //height value expressed in centimeters.
+             arr[i].randheight = rand() % (2 - 1 + 1) + 1; //height value expressed in meters.
             arr[i].randweight = rand() % (120 - 60 + 1) + 60; //weight expressed in kg.
 
             arr[i].randbmi = arr[i].randweight / (arr[i].randheight * arr[i].randheight);
