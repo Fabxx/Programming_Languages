@@ -22,8 +22,8 @@ typedef struct {
 
 /*In order, these functions do this:
 
-1) The funciton generated random values from the variables in the struct.
-2) The funciton prints out the BMI retreived from the random values.
+1) The function generated random values from the variables in the struct.
+2) The function prints out the BMI retreived from the random values.
 3) The function calculates the average between all the BMI samples.
 4) The function finds out which is the biggest BMI between all the samples.
 */
