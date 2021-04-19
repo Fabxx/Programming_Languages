@@ -1,3 +1,5 @@
+/*This program lets you retreive the BMI for each sample by generating randomic values for the height and the weight. From these two values we can generate
+  automatically the Body Mass Index value for each sample.*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -6,8 +8,7 @@
 #define MAX_NORM_BMI 24.9
 
 
-/*This program lets you retreive the BMI for each sample by generating randomic values for the height and the weight. From these two values we can generate
-  automatically the Body Mass Index value for each sample.*/
+
 
 typedef struct {
 
