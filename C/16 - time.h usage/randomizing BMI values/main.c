@@ -80,23 +80,21 @@ void randomizer() {
 
       int i;
 
+        //variable used to convert the height from meter to centimeters.
+        int centimeter_height;
 
         for (i = 0; i < MAX; i++) {
+              //instead of using a variable like randomvalue and then applying the random value to it before placing it in the struct element, we can directly take the struct 
+              //element and assign to that the randomic value that will be generated.
+            arr[i].age = rand() % (100 - 18 + 1) + 18;
 
+            arr[i].weight = rand() % (150 - 56 + 1) + 56;
 
-            int randage = rand() % 140 + 18;
+            arr[i].height = rand() % (200 - 160 + 1) + 160;
 
-            arr[i].age = randage;
+            centimeter_height =  arr[i].height / 100;
 
-            int randweight = rand() % 150 + 45;
-
-            arr[i].weight = randweight;
-
-            int randheight = rand() % 2 + 1; //Expression in meters.
-
-            arr[i].height = randheight;
-
-            arr[i].bmi = (arr[i].weight)/(arr[i].height * arr[i].height);
+            arr[i].bmi = (arr[i].weight)/(centimeter_height * centimeter_height);
 
 
 
