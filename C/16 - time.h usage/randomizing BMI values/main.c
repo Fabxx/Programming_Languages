@@ -3,6 +3,8 @@
 #include <time.h>
 #define MAX 5
 #define CAT 40 //range for age category.
+#define MIN_BMI 18
+#define NORM_BMI 25
 
 typedef struct {
 
@@ -26,7 +28,6 @@ typedef struct {
 5) The function calculates the average Body Mass Index with samples under age 40
 6) The function fetches the max weight with samples over age 40
 7) The function fetches the max weight with samples under age 40
-
 */
 
 
@@ -48,6 +49,9 @@ typedef struct {
    void max_weight_under();
 
 
+
+//inizio blocco funzione principale.
+
 int main(void) {
 
       int seed = time(NULL);
@@ -65,6 +69,8 @@ int main(void) {
 
        average_bmi_under();
        average_bmi_over();
+
+       puts("Repeat?\n");
 
        system("pause");
 
@@ -101,6 +107,8 @@ void randomizer() {
 }
 
 
+
+
 void print_rand() {
 
      int i;
@@ -113,6 +121,7 @@ void print_rand() {
                "Bmi:%.2f\n\n", arr[i].height, arr[i].weight, arr[i].age, arr[i].bmi);
     }
 }
+
 
 
 void max_height_over() {
@@ -246,11 +255,11 @@ void average_bmi_under() {
             printf("\033[0;37mBMI average under 40: \033[0;31m%.2f\n\n", average_bmi_under);
 
 
-                    if (average_bmi_under > 25) {
+                    if (average_bmi_under > NORM_BMI) {
 
                         puts("\033[0;31mThe sample is overweight.\n\n");
 
-                    } else if (average_bmi_under > 18 && average_bmi_under <= 25) {
+                    } else if (average_bmi_under > MIN_BMI && average_bmi_under <= NORM_BMI) {
 
                         puts("\033[0;32mThe sample is normalweight\n\n");
 
@@ -280,13 +289,13 @@ void average_bmi_over() {
                         average_bmi_over = sum_bmi / MAX;
         }
 
-                        printf("\033[0;37mBMI average under 40:\033[0;31m%.2f\n\n", average_bmi_over);
+                        printf("\033[0;37mBMI average under 40: \033[0;31m%.2f\n\n", average_bmi_over);
 
-                    if (average_bmi_over > 25) {
+                    if (average_bmi_over > MIN_BMI) {
 
                         puts("\033[0;31mThe Sample is overweight\n");
 
-                    } else if (average_bmi_over > 18 && average_bmi_over <= 25) {
+                    } else if (average_bmi_over > MIN_BMI && average_bmi_over <= NORM_BMI) {
 
                         puts("\033[0;32mThe sample is normalweight\n");
 
