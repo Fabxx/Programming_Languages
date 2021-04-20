@@ -50,8 +50,6 @@ typedef struct {
 
 
 
-//inizio blocco funzione principale.
-
 int main(void) {
 
       int seed = time(NULL);
@@ -80,12 +78,14 @@ void randomizer() {
 
       int i;
 
-        //variable used to convert the height from meter to centimeters.
-        int centimeter_height;
+    //variable used to convert the height from meter to centimeters.
+    int centimeter_height;
+
+        printf("Generating values for %d samples.\n\n", MAX);
 
         for (i = 0; i < MAX; i++) {
-              //instead of using a variable like randomvalue and then applying the random value to it before placing it in the struct element, we can directly take the struct 
-              //element and assign to that the randomic value that will be generated.
+
+
             arr[i].age = rand() % (100 - 18 + 1) + 18;
 
             arr[i].weight = rand() % (150 - 56 + 1) + 56;
@@ -103,8 +103,6 @@ void randomizer() {
 }
 
 
-
-
 void print_rand() {
 
      int i;
@@ -117,7 +115,6 @@ void print_rand() {
                "Bmi:%.2f\n\n", arr[i].height, arr[i].weight, arr[i].age, arr[i].bmi);
     }
 }
-
 
 
 void max_height_over() {
@@ -139,7 +136,7 @@ void max_height_over() {
         }
     }
 
-            printf("Max height over 40:%d meters\n", max_over);
+            printf("Max height over 40: %d meters\n\n", max_over);
 }
 
 
@@ -166,11 +163,10 @@ void max_height_under() {
 
     }
 
-      printf("Max height under 40:%d metri\n\n", max_under);
+      printf("Max height under 40: %d metri\n\n", max_under);
 
 
 }
-
 
 
 void max_weight_over() {
@@ -196,7 +192,7 @@ void max_weight_over() {
 
     }
 
-      printf("Max weight over 40:%d\n", weight_over);
+      printf("Max weight over 40: %d\n\n", weight_over);
 
 
 }
@@ -225,7 +221,7 @@ void max_weight_under() {
 
     }
 
-      printf("Max weight under 40:%d\n\n", weight_under);
+      printf("Max weight under 40: %d\n\n", weight_under);
 
 }
 
@@ -248,7 +244,7 @@ void average_bmi_under() {
                     average_bmi_under = sum_bmi / MAX;
         }
 
-            printf("\033[0;37mBMI average under 40: \033[0;31m%.2f\n\n", average_bmi_under);
+            printf("\033[0;37mBMI average under 40: %.2f\n\n", average_bmi_under);
 
 
                     if (average_bmi_under > NORM_BMI) {
@@ -285,7 +281,7 @@ void average_bmi_over() {
                         average_bmi_over = sum_bmi / MAX;
         }
 
-                        printf("\033[0;37mBMI average under 40: \033[0;31m%.2f\n\n", average_bmi_over);
+                        printf("\033[0;37mBMI average under 40: %.2f\n\n", average_bmi_over);
 
                     if (average_bmi_over > MIN_BMI) {
 
