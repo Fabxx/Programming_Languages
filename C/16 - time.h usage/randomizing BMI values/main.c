@@ -13,9 +13,9 @@ typedef struct {
      int age;
      float bmi;
 
-} dati;
+} database;
 
-   dati arr[MAX];
+   database arr[MAX];
 
 
 /*In order, these functions do:
