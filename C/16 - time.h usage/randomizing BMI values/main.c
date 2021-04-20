@@ -136,7 +136,7 @@ void max_height_over() {
         }
     }
 
-            printf("Max height over 40: %d meters\n\n", max_over);
+            printf("Max height over 40: %d\n\n", max_over);
 }
 
 
@@ -163,7 +163,7 @@ void max_height_under() {
 
     }
 
-      printf("Max height under 40: %d metri\n\n", max_under);
+      printf("Max height under 40: %d\n\n", max_under);
 
 
 }
