@@ -48,9 +48,6 @@ typedef struct {
    void max_weight_under();
 
 
-
-//inizio blocco funzione principale.
-
 int main(void) {
 
       int seed = time(NULL);
@@ -104,8 +101,6 @@ void randomizer() {
 }
 
 
-
-
 void print_rand() {
 
      int i;
@@ -118,7 +113,6 @@ void print_rand() {
                "Bmi:%.2f\n\n", arr[i].height, arr[i].weight, arr[i].age, arr[i].bmi);
     }
 }
-
 
 
 void max_height_over() {
