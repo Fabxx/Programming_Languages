@@ -70,8 +70,6 @@ int main(void) {
        average_bmi_under();
        average_bmi_over();
 
-       puts("Repeat?\n");
-
        system("pause");
 
         return 0;
