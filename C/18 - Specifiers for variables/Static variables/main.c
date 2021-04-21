@@ -35,4 +35,7 @@ void static_sample() {
 }
 
 
+/*NOTE: the static function it's useful to keep the values after the end of the functions, but it's mainly used for big projects to avoid conflicting names/types such as kernels
+        if you want to keep the value even after the function, you can simply do a parameter pass, check here: 
+        https://github.com/Sqrdelta/Programming_Languages/blob/master/C/14%20-%20Parameters%20pass/Sum%20with%20parameter%20pass/main.c*/
 
