@@ -6,9 +6,6 @@ void sum();
 
 int main(void) {
 
-    int seed = time(NULL);
-    srand(seed);
-
     int i;
     
     /*When we recall the sum function for multiple times, each cicle will keep the previous sum value since it's a static value, it will not be lost after 
