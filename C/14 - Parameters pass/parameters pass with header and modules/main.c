@@ -18,7 +18,7 @@ int main() {
 
     int c = power(a);
 
-    int d = power(a) * b;
+    int d = c * b;
 
 
     int e = cube(b);
