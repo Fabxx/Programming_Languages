@@ -1,41 +1,39 @@
 /*This program shows how the keyword "static" behaves on the variables/functions.*/
-
 #include <stdio.h>
 #include <stdlib.h>
 
-void static_sample();
+void sum();
 
 int main(void) {
 
+    int seed = time(NULL);
+    srand(seed);
 
-    static_sample();
+    int i;
+    
+    /*When we recall the sum function for multiple times, each cicle will keep the previous sum value since it's a static value, it will not be lost after 
+    the sum function is over*/
 
-}
+    for (i = 0; i < 2; i++) {
 
-
-void static_sample() {
-
-    /*Our static variable, which will store the value in it's memory address until the funciton it's finished. Once the function it's finished, the value
-      it's not destroyed*/
-
-     static int a = 0;
-
-            while (a < 10) {
-
-                //Increment of the variable.
-                a++;
-
-                //We print the furst value stored.
-
-                printf("static A Value: %d\n", a);
-
-            /*after increasing again the value, even after exiting the previous function, the int didn't lost it's previous value, which was 1.
-              so after we increase it again, we will get 2 instead of 1, because it will not start from 0*/
+        sum();
     }
+
 }
 
+void sum() {
 
-/*NOTE: the static function it's useful to keep the values after the end of the functions, but it's mainly used for big projects to avoid conflicting names/types such as kernels
-        if you want to keep the value even after the function, you can simply do a parameter pass, check here: 
-        https://github.com/Sqrdelta/Programming_Languages/blob/master/C/14%20-%20Parameters%20pass/Sum%20with%20parameter%20pass/main.c*/
+    int a = 10;
+    int b = 5;
+    
+     /*Our static variable, which will store the value in it's memory address until the funciton it's finished. Once the function it's finished, 
+    the value it's not lost*/
+
+    static int sum = 0;
+
+            sum += a;
+            sum += b;
+
+            printf("sum:%d\n", sum);
+        }
 
