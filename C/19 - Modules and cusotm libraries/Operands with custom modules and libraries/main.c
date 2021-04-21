@@ -7,8 +7,13 @@
 
 int main() {
 
-    sum();
-    sub();
+    int i;
+
+        for ( i = 0; i < 3; i++) {
+
+            sum();
+            sub();
+    }
 
     return 0;
 }
