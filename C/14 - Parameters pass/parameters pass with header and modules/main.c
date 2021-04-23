@@ -3,7 +3,7 @@
 #include "math.h"
 #include <time.h>
 
-int main() {
+int main(int a, int b) {
 
     / * Using the passed parameters, we carry out the operations. Note, even though a and b were declared in the other source's ints, there are no conflicts
        with other source files. The program randomizes values, with the randomized values we carry out the operations given as an example to the various functions
@@ -11,8 +11,8 @@ int main() {
 
     srand(time(NULL));
 
-    int a = rand() % 10 + 1;
-    int b = rand() % 10 + 1;
+     a = rand() % 10 + 1;
+     b = rand() % 10 + 1;
 
     / * Once the values have been randomized, we work on them, using the functions with the necessary operation * /
 
