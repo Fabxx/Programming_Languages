@@ -1,3 +1,5 @@
+/*Copyright DaraWoo - Programming Languages*/
+
 #include <stdio.h>
 #include <stdlib.h>
 
