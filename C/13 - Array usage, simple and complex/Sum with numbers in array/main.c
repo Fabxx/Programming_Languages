@@ -3,7 +3,8 @@
 #define SIZE 5
 
 /*This program shows the usage of a simple array to get multiple numbers and do a sum with them. In this case we do a sum, but it's the same for
-  the other operands such as subtraction, ecc.*/
+  the other operands such as subtraction, ecc. 
+  NOTE: an array it's already a pointer to it's memory address cells, don't you ever do this thing: int *array[SIZE]*/
 
 int main() {
 
