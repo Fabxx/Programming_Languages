@@ -1,3 +1,6 @@
+/*This program shows the usage of parameter pass by reference using pointers. It generates random values for the times for each car on each lap, then it converts the milliseconds
+  to minutes and seconds.*/
+
 #include "lap_times.h"
 
 int main(void) {
