@@ -1,4 +1,4 @@
-
+/*Functions*/
 
 #include "lap_times.h"
 
