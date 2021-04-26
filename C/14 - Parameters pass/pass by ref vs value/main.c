@@ -35,3 +35,6 @@ int main() {
 // SUMMARY:
 // when you pass by ref, you can modify the original value.
 // when you pass by value, you only can read the original value.
+
+//The pointer variables are useful if you want to pass the actual variabile in another by taking his address, which contains it's value. So you can replace values when you need it
+//of a variabile in the main for example or elsewhere.
