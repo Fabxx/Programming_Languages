@@ -2,8 +2,8 @@
 a list and function   """
 
 
-number = [0,1,2,3,4]
+numbers = [0,1,2,3,4]
 
-cubed = list(map(lambda x: x * 3), number)
+cubed = map(lambda x: x * 3, numbers)
 
-print(cubed)
+print(list(cubed))
