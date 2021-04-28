@@ -10,6 +10,7 @@ int main(void) { //main function
 
 
     calcs(n); //calling calcs funciton with n array parameter, so the values that will go in n array will pass in numbers array.
+              // DO NOT pass the size of it too, aka [MAX], or else the program will crash and overflow.
 
     system("pause");
 

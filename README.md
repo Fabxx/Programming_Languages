@@ -1,3 +1,5 @@
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+
 # Programming Languages.
 
 ## About the Project
@@ -38,7 +40,6 @@ Essentially, you'll want to:
 10. If I accept your PR, then it will now be in the code, otherwise I will leave comments on how to improve your PR.
 
 ## Contact
-My discord: Fab_#4870
 Our Discord Group: https://discord.gg/E3SkYGJhju
 
 Thank you! Happy coding!!
