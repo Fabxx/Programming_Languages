@@ -1,6 +1,6 @@
-#For loop with array iteration
+""" For loop with array iteration """
 
 heroes = ['Superman', 'Batman','Green Lantern']
 
-for x in heores:
+for x in heroes:
 	print(x)
