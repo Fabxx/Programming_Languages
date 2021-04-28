@@ -4,4 +4,4 @@ a name. Below is an example """
 
 square = lambda x: x * 2
 
-print(double(3))
+print(square(3))
