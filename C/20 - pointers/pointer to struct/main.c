@@ -10,7 +10,7 @@ typedef struct {
 
 } structure;
 
-//We recall the structure and declare a pointer, hwich initially iss etted to NULL.
+//We recall the structure and declare a pointer, which initially is setted to NULL.
 
 void input(structure *strptr);
 
