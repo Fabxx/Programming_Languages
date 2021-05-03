@@ -12,7 +12,6 @@ void password(char pass[]) {
         gets(pass);
 
         for(i=MIN; i<MAX; i++){
-
             *(pass+i) = '*';
         }
          printf("Password:%s\n", pass);
