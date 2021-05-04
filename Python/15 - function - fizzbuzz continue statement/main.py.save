@@ -1,0 +1,36 @@
+"""Pass statements  """
+
+
+def fizzbuzz():
+        for x in range(1,25):
+                print(x)
+                if x % 15 == 0:
+                        print("fizzbuzz")
+                        #Once it reaches 15 the loop will continue
+                        pass
+                elif x % 3 == 0:
+                        print("fizz")
+                elif x % 5 == 0:
+                        print("buzz")
+        print("The loop has ended")
+
+
+fizzbuzz()
+
+"""Continue statements  """
+
+
+def fizzbuzz():
+	for x in range(25):
+		if x % 3 == 0:
+			print("fizz")
+		elif x % 5 == 0:
+			print("buzz")
+		elif x % 3 == 0 and x % 5 == 0:
+			print("fizzbuzz")
+			#Once it reaches 15 fizzbuzz wont be printed and the loop will continue
+			continue
+	print("The loop has ended")
+
+
+fizzbuzz()

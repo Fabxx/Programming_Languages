@@ -1,4 +1,4 @@
-"""Pass statement   """
+"""Pass statement is a placeholder that does nothing and continues with the loop.   """
 
 
 def fizzbuzz():

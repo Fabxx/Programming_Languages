@@ -1,4 +1,4 @@
-"""Break statements will end a loop once a condition has been met  """
+"""Break statements will end a loop once a condition has been met.  """
 
 
 def fizzbuzz():

@@ -1,4 +1,4 @@
-"""Continue statement  """
+"""Continue statement skips over a condition and continues with the iteration   """
 
 
 def fizzbuzz():
