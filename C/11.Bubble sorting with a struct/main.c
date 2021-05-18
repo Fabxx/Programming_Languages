@@ -4,59 +4,35 @@
 
 /*A simple program that orders structure elements with bubble sort algorithm, based on the number of the integer related to each
    element.*/
-
-
     typedef struct {
 
        int num;
-
        char name[100];
-
        char surname[100];
-
-
     } structure;
 
-
     structure str[MAX]; //array for the structure
-
-
       int num_elem; //number of elements where  we will acquire the information.
-
 
     void input() {
 
              int i;
-
-
+       
            printf("Insert the number of elements where you want to acquire data.\n");
             scanf("%d", &num_elem);
 
                for (i = 0; i < num_elem; i++) { //acquiring input for n elements desired from the user.
-
                    printf("Insert the name\n");
                       fflush(stdin);
                       gets(str[i].name);
-
                        printf("Insert the surname\n");
                               fflush(stdin);
                            gets(str[i].surname);
-
-
                            printf("Insert the number for this element\n");
                              scanf("%d", &str[i].num);
-
-
        }
-
-
                           printf("Acquisition completed\n");
-
     }
-
-
-
-
 
     void bubble_sort() {
 
@@ -106,11 +82,7 @@
             printf("Number:%d\n", str[i].num);
 
     }
-
-
  }
-
-
 
  int main(void) {
   
