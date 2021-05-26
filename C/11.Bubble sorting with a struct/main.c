@@ -36,22 +36,24 @@
 
     void bubble_sort() {
 
-      int i;
+      int i = 0, j = 0;
 
       int p = num_elem; //p used to get the number of elements to get the position of them.
 
       structure tmp;
 
-       for (i = 0; i < p-1; i++) {
-        if (str[i].num > str[i+1].num) { //if the number of the first element is major than the next one, we exchange them
+       for (i = 0; i < i-1; i++) {
+          for (j = i+1; j < i; j++) {
+             
+        if (str[i].num > str[j].num) { //if the number of the first element is major than the next one, we exchange them
            
             tmp = str[i]; //the exchange is done with the structure array directly instead of exchanging each parameter of the label.
-            str[i] = str[i+1];
-            str[i+1] = tmp;
+            str[i] = str[j];
+            str[j] = tmp;
         } //end of exchange.
-             p -= 1; //after the exchange we decrease the position of the elements which has been exchanged.
-
-    } //end of for cicle.
+     }
+  
+   } //end of for cicle.
 
 } //end of funciton.
 
