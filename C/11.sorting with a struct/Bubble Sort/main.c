@@ -13,10 +13,9 @@
 
     structure str[MAX]; //array for the structure
       int num_elem; //number of elements where  we will acquire the information.
-
-    void input() {
-
-             int i;
+void input() {
+	    
+    int i;
        
            printf("Insert the number of elements where you want to acquire data.\n");
             scanf("%d", &num_elem);
@@ -37,24 +36,20 @@
 void bubble_sort() {
 
       int i = 0, j = 0;
-
       structure tmp;
-
       int sorted = 1;
-
-      do{
-		  
-      sorted = 1;
-	  
+      
+	do {	  
+      sorted = 1; 
+		
       for (i = 0; i < p-1; i++) {
         if (str[i].num > str[i+1].num) { //if the number of the first element is major than the next one, we exchange them
-            
-			tmp = str[i]; //the exchange is done with the structure array directly instead of exchanging each parameter of the label.
+	    tmp = str[i]; //the exchange is done with the structure array directly instead of exchanging each parameter of the label.
             str[i] = str[i+1];
             str[i+1] = tmp;
             sorted = 0;
 			
-		 } //end of exchange.
+	 } //end of exchange.
   
 	} //end of for cicle.
    
