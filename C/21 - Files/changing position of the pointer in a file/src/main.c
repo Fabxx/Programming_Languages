@@ -1,4 +1,4 @@
-/*An example of cahnging the pointer position into the struct. Each struct it's like a memory block, each block in the file contains the 
+/*An example of changing the pointer position into the struct. Each struct it's like a memory block, each block in the file contains the 
   variables of the struct in the file. In this example each structure is composed by 3 lines. We want to edit directly the b variable. 
   to do this, we rewind the pointer of the file at the beginning, and then with fseek function, we tell to set the pointer, starting from
   the first sizeof(structure) which is our first memory block, and we tell that we want to skip the array of chars and go directly to b
