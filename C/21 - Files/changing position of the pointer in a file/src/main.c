@@ -2,7 +2,9 @@
   variables of the struct in the file. In this example each structure is composed by 3 lines. We want to edit directly the b variable. 
   to do this, we rewind the pointer of the file at the beginning, and then with fseek function, we tell to set the pointer, starting from
   the first sizeof(structure) which is our first memory block, and we tell that we want to skip the array of chars and go directly to b
-  variable, then, we edit the b variable in the file*/
+  variable, then, we edit the b variable in the file. If we want to skip a memory block of a structure, we have to put a integer to
+  multiply it with the sizeof, so it will be like sizeof(structure) * choice from user/any integer you want to put:
+  fseek(fileptr, sizeof(structure) * 2 + POSIZIONE_B, SEEK_SET); here we're saying, go to the second memory block, to the B variable.*/
 
 #include "../include/struct.h"
 
