@@ -12,6 +12,9 @@ the value of charptr itself directly.
 charptr = strstr says, point to another memory cell (which means another pointer variable like char* string), and do strstr on it. 
 We needed to point to char* string[], so we did the assignment without the * symbol, to change the variable we wanted to point to.
 If we wanted to edit the pointer memory itself, we can put the full pointer with the *.
+
+strstr requires two pointers to find a string under another string, we passed first the origin string, then we tell what he has to find,
+in this case, \n.
 */
 
 #include <stdio.h>
