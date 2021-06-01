@@ -10,6 +10,7 @@
 charptr = strstr says, point to another memory cell, and assign strstr to it. 
 We needed to point to char* string[], so we did the assignment without the * symbol, to change the memory address.
 If we wanted to edit the pointer memory itself, we can put the full pointer with the *.
+*/
 
 #include <stdio.h>
 #include <stdlib.h>
