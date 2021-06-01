@@ -10,12 +10,14 @@ int clear_input_error(char* string){
     //Returns 1 if we didn't found any new line, and we clean the buffer.
     //in C, NULL result points to 0x0, which causes a segmentation fault, if we find a \n
     //we avoid that it goes in 0x0 by cleaning the buffer.
-    int result = 0;
+   int result = 0;
+  
     char* charptr;
 
     charptr = strstr(string, "\n");
+    
     if(charptr != NULL){
-        charptr = 0;
+        *charptr = 0; //if we find a \n, the memory address of the pointer containing \n becomes 0.
     }else{
         while(getchar() != '\n');
         result = 1;
