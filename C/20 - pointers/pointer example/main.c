@@ -5,6 +5,7 @@ int main(void) {
     //our variable in the main
 
     int x = 10;
+    int *y = 20;
 
     printf("Current MAIN X value:%d\n", x);
 
@@ -14,6 +15,7 @@ int main(void) {
     //memory address container.
 
     pointer(&x);
+    pointer(y); //we don't need the & since it's already a pointer by itself.
 
     if (x != 10) {
 
