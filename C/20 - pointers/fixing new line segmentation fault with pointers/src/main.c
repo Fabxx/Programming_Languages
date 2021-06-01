@@ -5,10 +5,12 @@
     //in C, NULL result points to 0x0, which causes a segmentation fault, if we find a \n
     //we avoid that it goes in 0x0 by cleaning the buffer.
 
-/*Note: doing charptr = strstr, and *charptr = strstr it's different, absically what happens is this:
-*charptr = strstr says, on the memory cell that you're already pointing to, replace the value with what you got assigned.
-charptr = strstr says, point to another memory cell, and assign strstr to it. 
-We needed to point to char* string[], so we did the assignment without the * symbol, to change the memory address.
+/*Note: doing charptr = strstr, and *charptr = strstr it's different, basically what happens is this:
+*charptr = strstr says, on the memory cell that you're already pointing to, replace the value with what you got assigned, we replace
+the value of charptr itself directly.
+
+charptr = strstr says, point to another memory cell (which means another pointer variable like char* string), and do strstr on it. 
+We needed to point to char* string[], so we did the assignment without the * symbol, to change the variable we wanted to point to.
 If we wanted to edit the pointer memory itself, we can put the full pointer with the *.
 */
 
