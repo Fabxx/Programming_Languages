@@ -30,7 +30,7 @@ char* getCurrentTime(){
     struct tm *currentTimestamp; //structure pointer.
 
     currentTime = time(NULL);
-    result = (char*)calloc(25, sizeof(char)); //memory allocation for each parameter size.
+    result = (char*)calloc(25, sizeof(char)); //memory allocation for each parameter size in the "", including brackets, number of integers ecc..
     currentTimestamp = localtime(&currentTime); //Converts given time since epoch as std::time_t value into calendar time, expressed in local time.
 
 	//we print with the buffer size of the pointer with sprintf.
