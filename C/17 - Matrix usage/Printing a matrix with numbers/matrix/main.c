@@ -36,6 +36,7 @@ void input() {
         /*We do again the for cicle to print the matrix by following the size of it, the numbers will be printed in orders of position, 1x1, 1x2 ecc.
             the last printf helps us to distinguish the rows and the columns by going at the end of the line after the first row is printed.*/
 
+            //note, the two for are only necessary if we want to print graphically like a real matrix.
 
         for (i = 0; i < ROW; i++) {
 
