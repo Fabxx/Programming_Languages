@@ -19,7 +19,8 @@ void input() {
     int i, j;
 
         /*We cicle for both rows and columns, we ask to insert a number for each position in the matrix, the first number will be in the position 1x1
-            the second number in the posiiton 1x2, where 1 is the row, 2 is the number of the columns and so on*/
+            the second number in the posiiton 1x2, where 1 is the row, 2 is the number of the columns and so on, the double for it's needed 
+            for numbers only, if we use strings, we need only one for and with fgets we already tell the size of the string that needs to be captured*/
 
         for (i = 0; i < ROW; i++) {
 
