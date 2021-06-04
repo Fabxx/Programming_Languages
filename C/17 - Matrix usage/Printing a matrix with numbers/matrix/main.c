@@ -5,6 +5,9 @@
 #define ROW 2
 #define COLUMN 2
 
+//note: THE COLUMN INDICATES THE LENGHT OF THE ROW, if we have 2 row with 4 colums for example, a single row can contain 4 numbers
+//same for characters, each character is correspondant to a column position. {h e l l o} it's 1 row, with 5 columns
+
 /*This program shows how to print a matrix of numbers in C, by putting numbers*/
 void input();
 
