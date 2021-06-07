@@ -1,10 +1,10 @@
 /**
  * @file main.c
  * @author Sqrdelta -  https://github.com/Sqrdelta/Programming_Languages
- * @brief This program shows how to use matrixes with strings, we indicate that the matrix
- * 	  can contain 10 strings for a total of 15 lenght, each column it's a space of a single 
- * 	  character for each word we type in. We remove the \n because it might cause skips or segmentation faults
- * 	  depending on what you're gonna do, then we proceed to print them. We clear the buffer after we
+ * @brief This program shows how to use matrixes with stirngs, we indicate that the matrix
+ * 		  can contain 10 strings for a total of 15 lenght, each column it's a space of a single 
+ * 		  character for each word we type in. We remove the \n because it might cause skips or segmentation faults
+ * 		  depending on what you're gonna do, then we proceed to print them. We clear the buffer after we
  *        inserted a string, because in case we insert a longer stirn gthan the LENGHT, we will have leftovers
  *        in the input buffer, and thosee will go into the next i position, causing bugs or even worse, makes
  *        skip the whole function and will print out empty strings.
@@ -55,7 +55,9 @@ int main () {
 		fflush(stdin); //this is used to clean the buffer input, if we put a string bigger than 15 
 					   //those won't be stored in the next i position, we will have a clean string.
 
-		if(strcmp(matrix[i], "\n") == 0) {
+		if(strcmp(matrix[i], "\0") == 0) { //if we don't put anything 
+		 								   //note: here it's used \0 because the terminal character it's replaced with this.
+										   //in the buffer we don't have any \n with clear_endline function, instead it becomes \0.
 			i = STRINGS;
 		}
 	}
