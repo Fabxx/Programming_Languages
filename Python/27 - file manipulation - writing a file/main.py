@@ -1,12 +1,14 @@
-# Writing a filing co9mes in handy when analyzing data and later storing it
+# Writing a filing comes in handy when analyzing data and later storing it
 
+#Creating the file
+filename = "example.txt"
 
-#initiating a for loop and storing it in a csv file
-i = []
-for a in range(0,10,2):
-	#converting the numbers in the for loop into a list
-	i = list()
-	#storing the numbers in a csv file
-	with open("loop.csv", 'w') as f:
-		f.write(i)
+#Opening the file
+file = open(filename, 'w')
 
+#Storing numbers 1-10 in the file
+for i in range(1,11):
+	file.write("This is line %i.\n" % i)
+
+#Closing the file
+file.close()
