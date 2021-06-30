@@ -3,7 +3,7 @@
 # Programming Languages.
 
 ## About the Project
-This project provides basic examples of many programming languages and briefly covers major topics for beginners. These examples are made to help beginners understand and see samples of the programming language they are trying to learn. Currently we are working on the following languages: Assembly x86/64, C, C++, C#, Python, Arduino.
+This project provides basic examples of many programming languages and briefly covers major topics for beginners. These examples are made to help beginners understand and see samples of the programming language they are trying to learn. Currently we are working on the following languages: Assembly x86/64, C, C++, C#, Python, Arduino, Raspberry Pi.
 
 ## Contributing
 If you want to contribute to this little "hobby project", either file a issue report (if there's a syntax mistake for example) or do a pull request to provide a new code. NOTE: view the C folder to see a good example. Not only should all the code for a specific programming language be in its respective folder (i.e. C, Python, etc.), but also the topics you want to cover should be their own labeled folder (like chapters of a textbook).
