@@ -38,6 +38,6 @@ char inputstr(char string[]) {
  
     fgets(string, sizeof(string), stdin);
     fflush(stdin);
-    return string;
+    return inputstr(string);
 
 }
