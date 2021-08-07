@@ -24,10 +24,10 @@ int main()
 	
 	if (strcmp(string1, string2) == 0)
 	{
-		puts("The stirngs are the same\n");
+		puts("The strings are the same\n");
 	}else
 	{
-		puts("the stirngs are different\n");
+		puts("the strings are different\n");
 	}
 
 
