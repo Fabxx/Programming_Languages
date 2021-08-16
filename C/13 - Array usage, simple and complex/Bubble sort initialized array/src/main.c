@@ -14,7 +14,7 @@
 #include <time.h>
 #define N 5
 
-void selectionsort(int array[]);
+void Bubblesort(int array[]);
 void print(int array[]);
 void randomizer(int array[]);
 
@@ -23,7 +23,7 @@ int main() {
 	int array[N];
 
 	randomizer(array);
-	selectionsort(array);
+	Bubblesort(array);
 	print(array);
 }
 
@@ -40,7 +40,7 @@ void randomizer(int array[]) {
 	}		
 }
 
-void selectionsort(int array[]) {
+void Bubblesort(int array[]) {
 	int tmp, i;	
 	int sorted = 0;
 
