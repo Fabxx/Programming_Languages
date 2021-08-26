@@ -1,3 +1,15 @@
+/**
+ * @file main.c
+ * @author Prox_y
+ * @brief This program shows how to search a minimum value and max value
+ * 		  in a array of integers.
+ * @version 0.1
+ * @date 2021-08-26
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <stdio.h>
 #include <stdlib.h>
 #define ARR 5
