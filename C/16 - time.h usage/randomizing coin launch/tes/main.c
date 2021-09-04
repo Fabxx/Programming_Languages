@@ -20,7 +20,8 @@ void input()  {
         for (i = 0; i < LAUNCHES; i++) {
 
 
-            coin = rand() % (1 - 0 + 1) + 1; //we generate a numbers between 1 and 2. Where 1 is head, two is cross.
+            coin = rand() % (2 - 1 + 1) + 1; //we generate a numbers between 1 and 2. Where 1 is head, two is cross.
+                                             //max - 1 - min + min.
 
             randval = coin;
 
