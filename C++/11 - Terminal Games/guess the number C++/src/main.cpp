@@ -36,7 +36,7 @@ int main() {
 			int seed = time(NULL);
 			srand(seed);
 
-			n = rand() % (10 - 1 - 0) + 1; //max - 1 - min + min.
+			n = rand() % (10 - 1 - 0) + 0; //max - 1 - min + min.
 										   //range between 0-10.
 
 			cout << "Guess the number between 1-10!" << endl;
