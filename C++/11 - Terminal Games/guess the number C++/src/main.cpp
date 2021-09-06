@@ -12,26 +12,28 @@
 
 #include <iostream>
 #include <time.h>
-#define N 5
+#define N 3
 
 using namespace std;
 
-void delay(int ns)
-{
-
-    int ms = 1000 * ns:
+void delay(int number_of_seconds) {
+    // Converting time into milli_seconds
+    int milli_seconds = 1000 * number_of_seconds;
+  
+    // Storing start time
     clock_t start_time = clock();
- 
-    while (clock() < start_time + ms);
+  
+    // looping till required time is not achieved
+    while (clock() < start_time + milli_seconds);
 }
   
 // Driver code to test above function
 
-int main() {
+int main(void) {
 
 	int n = 0, a = 0;
 
-	while (n == 0) {
+	while (n == 0) { //check if n is still 0, then repeat the sequence.
 		do{
 			int seed = time(NULL);
 			srand(seed);
@@ -39,24 +41,25 @@ int main() {
 			n = rand() % (10 - 1 - 0) + 0; //max - 1 - min + min.
 										   //range between 0-10.
 
-			cout << "Guess the number between 1-10!" << endl;
+			cout << "\033[0;37mGuess the number between 1-10!" << endl;
 			cin >> a; 
-			
-			cout << "You failed, try again!" << endl;
-			cout << "Randomizing value in 5 seconds\n" << endl;
+
+			if (a != n) {
+				cout << "\033[0;31mYou failed, try again!" << endl;
+				cout << "\033[0;33mRandomizing value in 3 seconds\n" << endl;
 			
 			for (size_t i = 0; i < N; i++) {
 				delay(1); //integer number that will be multiplied to achieve seconds.
 				cout << ".";
 			}
 				system("cls");
+		}
 
-		} while (a != n);
+	} while (a != n);
 
-			cout << "Success! exiting program...\n" << endl;
+			cout << "\033[0;32mSuccess! exiting program...\n" << endl;
 			system("pause");
 			return 0;
 		
-	}
-
+ }
 }
