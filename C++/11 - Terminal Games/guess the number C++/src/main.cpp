@@ -40,7 +40,8 @@ void randomizer() {
 			n = rand() % (10 - 1 - 0) + 0; //max - 1 - min + min.
 										   //range between 0-10.
 
-			cout << "\033[0;37mGuess the number between 1-10!" << endl;
+			cout << "\033[0;31mGuess the number between 1-10!" << endl;
+			cout <<	"\033[0;37mEverytime you fail, the number to guess will be randomized" << endl;
 			cin >> a; 
 
 			if (a != n) {
@@ -53,7 +54,6 @@ void randomizer() {
 			}
 				system("cls");
 				printer();
-				delay(3);
 				system("cls");
 		}
 
