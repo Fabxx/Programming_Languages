@@ -18,6 +18,10 @@ int main()
 /*
 %d--> for int
 
+%f--> for float
+
+%x--> dec to hex
+
 %u--> for unsigned int
 
 %ld--> for long int or long
