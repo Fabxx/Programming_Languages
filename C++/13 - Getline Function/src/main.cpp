@@ -4,7 +4,7 @@
  * @brief Showing usage of getline function, similar to a fgets in C, getline obtains
  *        from input a sequence of characters on a string variable. Plus, we show how to return 
  * 		  a string from an object. String it's an alternative too an array of char. If the
- *        element that we have to return in a function it's string type, then the funciton must brief 
+ *        element that we have to return in a function it's string type, then the funciton must be
  *        the same type, neither char, nor other types.
  * @version 0.1
  * @date 2021-09-28
