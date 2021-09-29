@@ -1,3 +1,17 @@
+/**
+ * @file main.cpp
+ * @author Prox_y
+ * @brief Showing comparison and search algorythms with object oriented programming, including:
+ * 		  -Max search
+ * 		  -Comparison between elements
+ * 		  -Comparison and verification of N elements greater than a single element.
+ * @version 0.1
+ * @date 2021-09-29
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <iostream>
 #include <stdbool.h>
 #define SIZE 5
