@@ -35,7 +35,7 @@ char *inputstr() { //the pointer on the function lets you return the string memo
 
     char *string;
 
-    string = (char *) malloc(sizeof(char *));
+    string = (char *) malloc(sizeof(char));
     //here the mem allocation will be multiplied for each char inserted by the user.
 
     fgets(string, sizeof(string), stdin);
