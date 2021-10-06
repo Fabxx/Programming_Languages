@@ -26,8 +26,8 @@ using namespace std;
 
 int main() {
 
-    char string; //insert 7 to get the matching
-    int x; //55 it's 7 in ASCII
+    char string; 
+    int x;
     cout << "Insert a character, you can insert a single number or symbol" << endl;
     cin >> string;
     cout << "Insert a number" << endl;
