@@ -6,7 +6,7 @@
  * 	static_cast` is used for cases where you basically want to reverse an implicit conversion, 
  * 	with a few restrictions and additions. `static_cast` performs no runtime checks. 
  * This should be used if you know that you refer to an object of a specific type, 
- * and thus a check would be unnecessary. NOTE: casting to char takes ASCII table as reference: https://www.asciitable.com/
+ * and thus a check would be unnecessary. NOTE: casting from char to int takes ASCII table as reference: https://www.asciitable.com/
  * 		  
     dynamic_cast only works for pointers or references to polymorphic class types;
     const_cast can't change types, only const or volatile qualifiers;
