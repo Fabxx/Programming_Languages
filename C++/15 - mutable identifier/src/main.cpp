@@ -5,8 +5,10 @@
  * 		  a constant function shouldn't be able to edit a variable because, like the name 
  * 		  suggests, a value operated by a constant function can't be changed. To be 
  * 		  able to do so, we create a mutable variable to pass to the constant function, so the
- *       constant function used to access the class can still edit it's objects. We're trying
- * 		to edit an integer with a constant access to the class.
+ *               constant function used to access the class can still edit it's objects. We're trying
+ * 		to edit an integer with a constant access to the class. Note that this requires a constructor,
+ 	        which means that the class itself must operate on the class values, then we use the constructor
+		as a constant.
  * @version 0.1
  * @date 2021-10-11
  * 
