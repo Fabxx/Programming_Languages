@@ -30,10 +30,14 @@ class myclass {
 };
 int main() {
    const myclass access(3, 7); //the two integers in the constructor parameters.
+	
    cout << "First access:\n";
    cout<<access.a<<" "<<access.b<<"\n";
+	
     //t.a=30; //Error occurs because a can not be changed, because object is constant.
-   access.b=100; //b still can be changed, because b is mutable.
+   access.b=100; //b still can be changed, because b is mutable, despite we're using a const access. 
+  
+   cout << "Second Access:\n";
    cout<<access.a<<" "<<access.b<<"\n";
    return 0;
 }
