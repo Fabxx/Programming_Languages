@@ -29,8 +29,5 @@ int main () {
   catch (int e) {
     cout << "An exception occurred. Exception Nr. " << e << '\n';
   }
-  catch (char string) {
-	  cout << "Exception occurred: " << string << endl;
-  }
   return 0;
 }
