@@ -1,0 +1,55 @@
+/*
+{ //DO NOT CALL IT DATA, CONFLICTING TYPE WITH access_range.h!
+static void playlose() {
+			PlaySound("../waves/doggo1.wav", NULL, SND_SYNC);
+		}
+		
+		//STATIC MEMBERS ARE USED TO ACCESS A MEMBER CLASS FROM ANOTHER CLASS.
+		
+		EXAMPLE
+		
+		class data1 
+		public:
+		
+				static void member();
+				
+		class data2
+				
+				void member2() {
+				
+				data1::member(); //accessing another member from data2.
+				
+					
+				}
+				
+				
+				//STATIC MEMBERS DO NOT LET ACCESS PRIVATE MEMBERS IF THOSE ARE NOT STATIC TOO.
+				
+				private: int a;
+						 static int b;
+				
+				public: static void access() {
+				
+						a = 10; //NOT ALLOWED.
+						using.b //ALLOWED.
+						
+						//IT'S CONVENIENT TO WORK WITH LOCAL VARIABLES IN A STATIC FUNCTION WHEN NECESSARY.
+						  DECLARE THEM DIRECTLY INTO THE STATIC MEMBER, DO NOT TRY TO PASS THEM FROM ANYWHERE,
+						  UNLESS THEY COME FROM ANOTHER STATIC MEMBER.
+						  
+						  
+						  //WHILE WORKING WITH STATIC MEMBERS AND STATIC VARIABLES IN PUBLIC AND PRIVATE
+						  TO RECALL A STATIC VARIABLE FROM PRIVATE TO PUBLIC STATIC MEMBER:
+						  
+						  execution {
+						private:
+							static int seed, n, a;
+						public:
+							static int randomizer() {
+							execution::seed = time(NULL);
+							srand(execution::seed); //VARIABLE RECALLED MUST HAVE CLASS NAME BEFORE IF IT'S STATIC VARIABLE.
+							execution::n = rand() % (10 - 1 - 0) + 0;
+							return n;
+			}		
+							//ALSO STATIC VARIABLES CANNOT BE INITIALIZED.
+              */
