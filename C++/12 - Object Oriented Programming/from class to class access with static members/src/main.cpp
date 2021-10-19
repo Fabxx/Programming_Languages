@@ -32,6 +32,16 @@ class class2 {
 		}
 };
 
+//private members must be static too:
+
+class class3 {
+	private:
+		static int a;
+	public: static void input(){
+		cin >> a;
+		cout << "Static variable:  " << a << endl;
+};
+
 int main() {
 
 	class2 access;
