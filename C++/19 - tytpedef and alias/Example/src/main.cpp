@@ -1,7 +1,7 @@
 /**
  * @file main.cpp
  * @author Prox_y
- * @brief Alias keyword it's a new standard to define new types of data.
+ * @brief Alias method it's a new standard to define new types of data in C++, with the usage of using keyword.
  * 		  in C we used typedef.
  * @version 0.1
  * @date 2021-10-20
