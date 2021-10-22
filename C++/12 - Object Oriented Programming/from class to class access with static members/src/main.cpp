@@ -42,9 +42,28 @@ class class3 {
 		cout << "Static variable:  " << a << endl;
 };
 
-int main() {
+	/*If in a class there are private variables, the functions/members that have to operate on them
+        MUST be all in the same class, or else we won't have access to the results we need.
 
-	class2 access;
-	access.member1();
-	return 0;
-}
+
+	If we need a value of a variable from a class to another, like doing a switch in another class with a 
+	value from another class. we can make that variable in the class public, out of all the members:
+	*/
+class input {
+    public: 
+            static int choice; //public variable, ACCESSIBLE FORM OTHER CLASSES.
+            
+		static void inputinit() {
+                cin >> choice;
+    }
+	
+};
+
+	class switcher {
+
+public:
+    static void switchoption() {
+         switch (input::choice) { //switching choice value from another class member.
+        case 1:
+
+};
