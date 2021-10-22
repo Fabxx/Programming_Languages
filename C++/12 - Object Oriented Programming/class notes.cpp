@@ -51,34 +51,29 @@ IF USING using namespace std AS GLOBAL, DO NOT CALL A CLASS DATA! CONFLICTING TY
 							//ALSO STATIC VARIABLES CANNOT BE INITIALIZED.
                 
                 
-                If in a class there are private variables, the functions/members that have to operate on them
-MUST be all in the same class, or else we won't have access to the results we need.
+        
 
 
-If we need a value of a variable from a class to another, like doing a switch in another class with a 
-value from another class. we can make that variable in the class public, out of all the members:
+                
+                /*If in a class there are private variables, the functions/members that have to operate on them
+                  MUST be all in the same class, or else we won't have access to the results we need.
 
 
+                If we need a value of a variable from a class to another, like doing a switch in another class with a 
+                value from another class. we can make that variable in the class public, out of all the members:
+		*/
+							  
 class input {
     public: 
             static int choice; //public variable, ACCESSIBLE FORM OTHER CLASSES.
             static void inputinit() {
                 cin >> choice;
             }
-
-
-
 };
 
-
-                
-                //If in a class there are private variables, the functions/members that have to operate on them
-                  MUST be all in the same class, or else we won't have access to the results we need.
-
-
-                If we need a value of a variable from a class to another, like doing a switch in another class with a 
-                value from another class. we can make that variable in the class public, out of all the members:
-
+							  
+							  
+							  
 class switcher {
 
 public:
