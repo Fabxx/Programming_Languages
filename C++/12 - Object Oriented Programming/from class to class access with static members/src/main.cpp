@@ -14,13 +14,16 @@
 using namespace std;
 
 class class1 {
-	
+	private:
+			static int a;
 public:
 		static void member() {
 			cout << "Hello" << endl;
 		}
 		void nonStaticMember() {
 			cout << "No hello" << endl;
+			
+			//cin >> a; error, function not static, can't access static variable.
 		}
 };
 
