@@ -1,5 +1,7 @@
 In order for the compiler to recognize all the declarations, the header files must be putted in the same order when those are referenced.
 
+Also note to put always the standard libraries before any custom library made by you.
+
 example:
 
 main(){
