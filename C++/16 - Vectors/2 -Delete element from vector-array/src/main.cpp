@@ -36,7 +36,8 @@ public:
 	}
 		void del_elem(int arr[]) {
 
-	  /*starting from the position we want to delete, we assign the current position to it's next element.
+	  /*starting from the position we want to delete, we assign the current position to it's next element, until the element we want 
+	  to delete reaches the end, then we delete it by using size-- to decrease the array size.
 	  size-1 it's to avoid a segmentation fault. Once all the elements are swapped with their nexts,
 	  we reduce the size by 1 after a single element has been deleted.*/
 
