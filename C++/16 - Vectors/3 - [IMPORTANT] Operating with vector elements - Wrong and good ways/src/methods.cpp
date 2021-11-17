@@ -93,7 +93,8 @@ void methods::single_vector() { //!WRONG METHOD.
          cin >> XY;
          XYcoords.push_back(XY);
      }
-     //size-1 to avoid out of bounds value error. 6 was the size, now we do 5.
+     //size-1 to avoid out of bounds value error. 6 was the size, now we do 5. i+=2 to calculate each two distinct coordinates.
+	 //in this way we avoid to repeat the values: [0] * [1], [2] * [3] and so on.
      for (size_t i = 0; i < 5; i+=2){
          totsum = XYcoords[i] * XYcoords[i+1];
          counter++;
