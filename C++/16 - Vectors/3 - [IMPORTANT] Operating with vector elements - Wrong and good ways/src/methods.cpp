@@ -1,3 +1,5 @@
+//NOTE, THIS EXAMPLE IS MAINLY TO WORK WITH COORDINATES IN PHYSICS.
+
 #include <iostream>
 using namespace std;
 #include <methods.h>
