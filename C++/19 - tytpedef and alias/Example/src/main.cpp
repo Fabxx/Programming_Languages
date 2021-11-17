@@ -13,6 +13,7 @@
 using namespace std;
 using Newtype = int; //typedef equivalent in C++
 typedef double NewtypeC; //standard typedef.
+using vett = vector<double_t>
 
 int main() {
 	Newtype a = 0;
