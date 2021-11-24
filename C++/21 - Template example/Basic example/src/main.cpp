@@ -24,7 +24,7 @@ class test{
 int main() {
 
         test<int, 3> templateExample; //Object declaration with template
-									  //test it's the name, int it's the type on Z, 3 it's the value on size_t N.
+									  //test it's the class, int it's the type on Z, 3 it's the value on size_t N.
 									  //TemplateExample it's the object decalred, which will be used for the array.
 
         for(int i = 0; i < 3; i++){  
