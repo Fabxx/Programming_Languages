@@ -39,8 +39,9 @@ public:
 	  /*starting from the position we want to delete, we assign the current position to it's next element, until the element we want 
 	  to delete reaches the end, then we delete it by using size-- to decrease the array size.
 	  size-1 it's to avoid a segmentation fault. Once all the elements are swapped with their nexts,
-	  we reduce the size by 1 after a single element has been deleted.*/
-
+	  we reduce the size by 1 after a single element has been deleted.
+	  */
+			
 	  		cout << "Select element to delete." << endl;
 	  		cin >> position;
 			
@@ -65,6 +66,20 @@ public:
 		}
 };
 
+
+
+/*NOTE: this is an example with a known position, if you want to remove a duplicate with a generic array, 
+	  you first have to order the array, then find the duplicate which will be [i] next to [i+1]:
+	  1 4 7 2 3 4 2 0 will be: 0 1 2 2 3 4 4 7, then we can do it this way:*/
+
+			void alternative_deletition(int arr[]) {
+				
+				for(size_t i = 0; i < arrsize; i++) {
+					if (arr[i] == arr[i+1]) {
+						arr[i] = arr[i+1];
+					}
+					size--;
+			}
 
 int main() {
 
