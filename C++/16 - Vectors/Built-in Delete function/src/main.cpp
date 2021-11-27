@@ -28,7 +28,10 @@ int main() {
         cout << e << ' ';
     }
 
-    v.clear();
+    v.clear(); //clears ALL the vector.
+    v.erase(v.begin() + position); //pos 0 + pos given to delete a specific element.
+	
+	
     
     cout << "... Numbers After: ";
     for ( int e : v ) {
