@@ -30,6 +30,8 @@ int main() {
 
     v.clear(); //clears ALL the vector.
     v.erase(v.begin() + position); //pos 0 + pos given to delete a specific element.
+// erase the first 3 elements, start from 0 finish to 3:
+  v.erase (v.begin(), v.begin()+3);
 	
 	
     
