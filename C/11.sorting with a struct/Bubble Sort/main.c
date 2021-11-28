@@ -47,11 +47,9 @@ void bubble_sort() {
 	    tmp = str[i]; //the exchange is done with the structure array directly instead of exchanging each parameter of the label.
             str[i] = str[i+1];
             str[i+1] = tmp;
-            sorted = 0;
-			
 	 } //end of exchange.
-  
-	} //end of for cicle.
+   		sorted = 0;
+    } //end of for cicle.
    
   }while(sorted == 0);
 
