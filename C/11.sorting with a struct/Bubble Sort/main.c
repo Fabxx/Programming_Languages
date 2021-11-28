@@ -39,10 +39,12 @@ void bubble_sort() {
       structure tmp;
       int sorted;
       
-	do {	  
+	  
       sorted = 1; 
 		
       for (i = 0; i < SIZE-1; i++) {
+	  while(sorted == 0) {
+		sorted = 1;
         if (str[i].num > str[i+1].num) { //if the number of the first element is major than the next one, we exchange them
 	    tmp = str[i]; //the exchange is done with the structure array directly instead of exchanging each parameter of the label.
             str[i] = str[i+1];
@@ -50,9 +52,7 @@ void bubble_sort() {
 	 } //end of exchange.
    		sorted = 0;
     } //end of for cicle.
-   
-  }while(sorted == 0);
-
+  
 } //end of funciton.
 
  void print_sort() {
