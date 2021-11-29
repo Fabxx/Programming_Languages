@@ -7,13 +7,13 @@ int vectors::compare;
 void vectors::input() {
 
 		int a = 0; 
-	for (size_t i = 0; i < vectors::vector1.size()+1; i++){
+	for (size_t i = 0; i < vector1.size()+1; i++){
 		cin >> a;
 		if (a == 33) //If number is 33 exit.
 		{
-				i = vectors::vector1.size();
+				i = vector1.size();
 		} else {
-				vectors::vector1.push_back(a);
+				vector1.push_back(a);
 		}		//else put the number in the vector.
 	}
 
