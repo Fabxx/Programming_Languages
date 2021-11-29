@@ -31,7 +31,7 @@ Third Pass:
 
 void swap(int *xp, int *yp) 
 { 
-	int temp = *xp; 
+	int temp = *xp; //temp MUST be a normal variable NOT pointer, or else will cause segmentation fault.
 	*xp = *yp; 
 	*yp = temp; 
 } 
@@ -40,12 +40,10 @@ void swap(int *xp, int *yp)
 void bubbleSort(int arr[], int n) 
 { 
 int i, j; 
-for (i = 0; i < n-1; i++)	 
-
-	// Last i elements are already in place 
-	for (j = 0; j < n-i-1; j++) 
-		if (arr[j] > arr[j+1]) 
-			swap(&arr[j], &arr[j+1]); 
+for (i = 0; i < n; i++)	 
+	for (j = i+1; j < n; j++) 
+		if (arr[i] > arr[j]) 
+			swap(&arr[i], &arr[j]); 
 } 
 
 /* Function to print an array */
