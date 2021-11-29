@@ -42,28 +42,22 @@ void randomizer(int array[]) {
 
 void Bubblesort(int array[]) {
 	int tmp, i;	
-	int sorted = 0;
-
-	/**We repeat this sequence of code until sorted gets back to 1 and
-	 	the array is finished.**/
-
-	do{
-		sorted = 1;
-		for (i = 0; i < N-1; i++){ 
-			if (array[i] > array[i+1]) {
+	/*We repeat this sequence of code untilthe array is finished.*/
+	
+		for (i = 0; i < N; i++){ 
+		  for (j = i+1; j < N; j++) {
+			if (array[i] > array[j]) {
 			tmp = array[i];
-			array[i] = array[i+1];
-			array[i+1] = tmp;
-			sorted = 0;
-		}	
+			array[i] = array[j];
+			array[j] = tmp;
+			}	
+		}
 	}
-	}while(sorted == 0);
 }
 
 void print(int array[]) {
 
 	int i;
-
 	for (i = 0; i < N; i++) {
 		printf("%d\t", array[i]);
 	}
