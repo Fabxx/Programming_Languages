@@ -15,8 +15,6 @@
 #include <random>
 using namespace std;
 
-
-
 int main() {
 	//seed init to randomize
 	random_device nameofseed;
