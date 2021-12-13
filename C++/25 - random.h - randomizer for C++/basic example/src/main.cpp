@@ -21,7 +21,6 @@ int main() {
 	//mersenne twister algorithm init, name of algorithm + twister function with parameter seed.
 	mt19937 mt(nameofseed());
 	/*Calling class template to specify data type to operate with and the range of numbers
-	 They must be with floating point precision.
 	 NOTE: dbl_min and dbl_max can be changed with  explicit numbers too. They just indicate the range.*/
 	uniform_real_distribution<double_t> dist(__DBL_MIN__, __DBL_MAX__);
 	for (size_t i = 0; i < 10; i++){
