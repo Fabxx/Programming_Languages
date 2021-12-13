@@ -8,4 +8,8 @@ int main()
     for (int i = 0; i < 10; i++){
         cout << i << endl;
     }
+    
+    //note, you can leve empty parameters too:
+    for(; !condition;){
+    }
 }
