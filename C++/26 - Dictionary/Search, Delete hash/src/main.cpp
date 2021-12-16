@@ -25,6 +25,9 @@ int main() {
 		cout << " " << index->first //first int pointer
 		     << " " << index->second << endl; //second int pointer.
 	}
+	
+	//direct deletition
+	//hash_table.erase(2)
 
 	for (index = hash_table.begin(); index != hash_table.end();){
 		if (index->first == 2){
