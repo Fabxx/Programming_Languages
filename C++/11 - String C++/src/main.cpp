@@ -32,6 +32,7 @@ using namespace std;
 
 int main() {
 	string string1, string2;
+	string::iterator index;
 	char array[10];
 	
 	cin >> string1; //normal input
@@ -39,20 +40,30 @@ int main() {
 	
 	//stores single char at the end
 	string1.push_back('a');
-	//removing last char
+	cout << "String with additional character: " << string1 << endl;
 	string1.pop_back();
 
-	//string iteration.
-	for (size_t i = 0; i < string1.size(); i++){
-		cout << " " << string1[i];
+
+	//iteration with class iterator
+	for (index = string1.begin(); index != string1.end(); index++){
+		cout << " " << *index;
 	}
 
+	cout << endl;
+	
+	//iteration with normal for
+	for (size_t i = 0; i < string1.size(); i++){
+		cout << "Normal for: " << string1[i];
+	}
+	
+	cout << endl;
+
 	//returns string lenght.
-	cout << " " << string1.length() << endl;
+	cout << "Lenght: " << string1.length() << endl;
     
 	//exchange string1 content with string2.
 	string1.swap(string2);
-	cout << "String 1" << string1 << endl;
+	cout << "String 1 contains: " << string1 << endl;
 
 	//copy content of string2 into array starting from position 0.
 	string2.copy(array, string2.length(), 0);
