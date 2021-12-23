@@ -44,4 +44,4 @@ Our Discord Group: https://discord.gg/E3SkYGJhju
 
 Thank you! Happy coding!!
     
-![(logo.png)]
+![](logo.png)
