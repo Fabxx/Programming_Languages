@@ -35,8 +35,8 @@ int main() {
 	string::iterator index;
 	char array[10];
 	
-	cin >> string1; //normal input
-	cin >> string2;
+	getline(cin, string1); //normal input. getline is needed if you need blank spaces.
+	getline(cin, string2);
 	
 	//stores single char at the end
 	string1.push_back('a');
