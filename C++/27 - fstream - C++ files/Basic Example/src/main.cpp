@@ -5,7 +5,6 @@
  * 			Operations:
  * 			name.open("nameoffile")
  * 			name.close();
- * 			name.fail(); //checks if the file.open() function fails.
  * 			ios::in	Open for input operations.
 			ios::out	Open for output operations.
 			ios::binary	Open in binary mode.
@@ -32,31 +31,27 @@ int main() {
 	
 	fstream myfile;
 	string retrieved;
-
-	//checking if file has been created already
-	myfile.open("name.txt");
-	if (myfile.fail()){
-		cout << "File not found, making one." << endl;
-		//creating the txt file. it's necessary to open the file for output, then closing it and reopen it for both input and output to be created.
-		myfile.open("name.txt", ios::out);
-		myfile.close();
-		myfile.open("name.txt", ios::in | ios::out);
+	//creating the txt file. it's necessary to open the file for output, then closing it and reopen it for both input and output to be created.
+	myfile.open("name.txt", ios::out);
+	myfile.close();
+	myfile.open("name.txt", ios::in | ios::out);
 	
-	} else{
-		//checking if the previous myfile.open() is active.
+	//checking if the file has been opened.
 	if (myfile.is_open()){
 			//writing to file a string.
 		myfile << "Writing text";
+		myfile.close(); //closing file to reset pointer at beginning
 	} else {
-		cout << "File is closed, open it first!" << endl;
+		cout << "File not found" << endl;
+		exit(0);
 	}
-	}
-	
-	//exporting writed text into retreived string.
-		myfile >> retrieved;
+	//exporting writed text into retreived string. You need to reopen the file to reset the pointer at the beginning.
+			myfile.open("name.txt", ios::in | ios::out);
+			cout << "Content of file: " << endl;
+			//using getline to avoid that the reading stops at the first space.
+			while(getline(myfile, retrieved)) {
+				cout << " " << retrieved << endl;
+			}
 		myfile.close();
-	cout << " " << retrieved << endl;
-	
 	return 0;
-
 }
