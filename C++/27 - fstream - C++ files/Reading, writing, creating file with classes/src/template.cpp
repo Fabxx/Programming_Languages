@@ -15,8 +15,12 @@ void fileop::makefile() {
 
 
 void fileop::writeonfile() {
+    //checking if the file hasn't been closed at the beginning, or else we open it and we write on it.
     if (myfile.is_open()){
          myfile << "writing text";
+    } else {
+        myfile.open("text.txt", ios::in | ios::out);
+        myfile << "writing text";
     }
     myfile.close();
 }
