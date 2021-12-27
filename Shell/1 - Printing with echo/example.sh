@@ -1,3 +1,6 @@
-#!/bin/bash //header init.
+#header init.
 
+#!/bin/bash 
+
+#equivalent of printf/cout.
 echo "Hello world!"
