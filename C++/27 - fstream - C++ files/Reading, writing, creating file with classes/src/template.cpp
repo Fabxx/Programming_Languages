@@ -19,7 +19,7 @@ void fileop::writeonfile() {
     if (myfile.is_open()){
          myfile << "writing text";
     } else {
-        myfile.open("text.txt", ios::in | ios::out);
+        myfile.open("text.txt");
         myfile << "writing text";
     }
     myfile.close();
@@ -27,7 +27,7 @@ void fileop::writeonfile() {
 
 void fileop::readfile() {
 
-    myfile.open("text.txt", ios::in | ios::out);
+    myfile.open("text.txt");
          cout << "File content: " << endl;
          
         while (getline(myfile, content)){
