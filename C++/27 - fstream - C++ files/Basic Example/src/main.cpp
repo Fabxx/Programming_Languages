@@ -48,7 +48,8 @@ int main() {
 	//exporting writed text into retreived string. You need to reopen the file to reset the pointer at the beginning.
 			myfile.open("name.txt", ios::in | ios::out);
 			cout << "Content of file: " << endl;
-			//using getline to avoid that the reading stops at the first space.
+			//using getline to avoid that the reading stops at the first space. NOTE: the while condition is not necessary
+			//this works if we put the getline even without the while.
 			while(getline(myfile, retrieved)) {
 				cout << " " << retrieved << endl;
 			}
