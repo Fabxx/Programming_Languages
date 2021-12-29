@@ -28,12 +28,10 @@ void fileop::writeonfile() {
 void fileop::readfile() {
 
     myfile.open("text.txt");
-         cout << "File content: " << endl;
-         
-        while (getline(myfile, content)){
-            cout << " " << content << endl;
-        }
-        myfile.close();
+     cout << "File content: " << endl; 
+     getline(myfile, content);
+     cout << " " << content << endl;
+     myfile.close();
 }
 
 void fileop::checkfile() {
