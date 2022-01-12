@@ -24,4 +24,4 @@ int main() {
    }
 }
 
-//If sum > of 255, then the loop will restart.
+//If x > than 255, then the loop will restart.
