@@ -35,7 +35,7 @@ int main() {
    myclass access;
    cout << "before: \n";
     access.print();
-   //access.a = 15; Uncomment and you'll see you can't access to it. Only a class object can access private objects.
+   //access.a = 15; Uncomment and you'll see you can't access to it. Only a class member can access private objects.
   cout << "After: \n";
    access.function();
    return 0;
