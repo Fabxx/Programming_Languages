@@ -1,7 +1,8 @@
 /**
  * @file main.cpp
  * @author Prox_Y
- * @brief A class can access to another class only if his members are static.
+ * @brief A class can access to another class only if his members are static. NOTE: static it's required only if you're using multiple classes that needs to access
+ each other members. If you use a single class, static it's not needed.
  * @version 0.1
  * @date 2021-10-19
  * 
