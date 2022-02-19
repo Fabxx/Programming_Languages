@@ -74,7 +74,7 @@ public:
 
 			void alternative_deletition(int arr[]) {
 				
-				for(size_t i = 0; i < arrsize; i++) {
+				for(size_t i = 0; i < arrsize-1; i++) {
 					if (arr[i] == arr[i+1]) {
 						arr[i] = arr[i+1];
 					}
