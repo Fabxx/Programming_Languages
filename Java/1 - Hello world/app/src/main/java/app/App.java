@@ -22,9 +22,10 @@ public class App {
     }
 
 public static void main(String[] args) {
+     string strinput;
      App object = new App();
      try {
-        object.scanfString("a");
+        object.scanfString(strinput);
      } catch (Exception e) {
         
      }
