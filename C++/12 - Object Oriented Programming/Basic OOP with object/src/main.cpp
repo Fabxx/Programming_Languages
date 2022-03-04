@@ -15,7 +15,7 @@ using namespace std;
 #include "class.h"
 
 int main() {
-    test2 obj;
-    obj.add();
+    test2 obj2; //calling here the object for test2 class to reach it's members.
+    obj2.add();
     return 0;
 }   
