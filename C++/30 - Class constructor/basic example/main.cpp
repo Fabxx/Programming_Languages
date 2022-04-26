@@ -17,4 +17,13 @@ class first {
             cout << "Printing with constructor\n";
             cout << "Operation result is: \n" << a+b;
         }
+          ~first(); //destructor, removes form memory the constructor.   
 };
+
+
+int main() {
+
+    first();
+
+    return 0;
+}
