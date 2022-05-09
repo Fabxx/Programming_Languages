@@ -1,0 +1,2 @@
+if a parameter is passed as void func(void* var), it means that it can accept any type of pointers. Unlike void func(void) 
+which means that no parameters are taken
