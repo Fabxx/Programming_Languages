@@ -6,13 +6,8 @@ using namespace std;
 fstream fileop::myfile;
 string fileop::content;
 
-void fileop::makefile() {
-
-    //file will be generated in the filesystem once we're done with it, fstream stores in storage only when necessary.
-    myfile.open("text.txt", ios::in | ios::out);
-
-
 void fileop::writeonfile() {
+      //file will be generated in the filesystem once we're done with it, fstream stores in storage only when necessary.
     myfile.open("text.txt");
     //alternative check
     if (!myfile.fail()) {
