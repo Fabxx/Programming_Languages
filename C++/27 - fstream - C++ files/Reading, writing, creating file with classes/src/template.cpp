@@ -7,8 +7,11 @@ fstream fileop::myfile;
 string fileop::content;
 
 void fileop::writeonfile() {
-      //file will be generated in the filesystem with ios::out. it is possible to write on file, but not to read on it.
-      //after the file has been created, we can open it as ios::in to use it as a read buffer
+      /*file will be generated in the filesystem with ios::out. it is possible to write on file, but not to read on it.
+       *after the file has been created, we can open it as ios::in to use it as a read buffer
+       DO NOT DO BOTH ios::in and ios::out if you want to create it at first! or else it expects that the file already 
+       exists as a input buffer and won't be created!*/
+      
     myfile.open("text.txt", ios::out);
     //alternative check
     if (!myfile.fail()) {
