@@ -7,8 +7,9 @@ fstream fileop::myfile;
 string fileop::content;
 
 void fileop::writeonfile() {
-      //file will be generated in the filesystem once we're done with it, fstream stores in storage only when necessary.
-    myfile.open("text.txt");
+      //file will be generated in the filesystem with ios::out. it is possible to write on file, but not to read on it.
+      //after the file has been created, we can open it as ios::in to use it as a read buffer
+    myfile.open("text.txt", ios::out);
     //alternative check
     if (!myfile.fail()) {
         //code
