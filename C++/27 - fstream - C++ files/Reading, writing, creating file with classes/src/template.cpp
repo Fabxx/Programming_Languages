@@ -8,10 +8,8 @@ string fileop::content;
 
 void fileop::makefile() {
 
-    myfile.open("text.txt", ios::out);
-    myfile.close();
+    //file will be generated in the filesystem once we're done with it, fstream stores in storage only when necessary.
     myfile.open("text.txt", ios::in | ios::out);
-    myfile.close();
 
 
 void fileop::writeonfile() {
