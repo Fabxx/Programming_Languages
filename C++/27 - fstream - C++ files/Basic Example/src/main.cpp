@@ -31,9 +31,7 @@ int main() {
 	
 	fstream myfile;
 	string retrieved;
-	//creating the txt file. it's necessary to open the file for output, then closing it and reopen it for both input and output to be created.
-	myfile.open("name.txt", ios::out);
-	myfile.close();
+	//file will be generated in the filesystem once we're done with it, fstream stores in storage only when necessary.
 	myfile.open("name.txt", ios::in | ios::out);
 	
 	//checking if the file has been opened.
