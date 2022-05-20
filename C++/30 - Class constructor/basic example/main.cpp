@@ -5,7 +5,7 @@ using namespace std;
   and that sum() is a constructor, but with type "void" instead. A constructor in a class can be useful if a class has to do 
   specific things that needs to be done only when needed, without creating overhead with more functions. 
   A class constructor can also maintain data at runtime when needed, so the data is stored in memory and doesn't have to be 
-  re-fetched everytime*/
+  re-fetched everytime, but will be destroyed as soon the constructor ends.*/
 
 class first {
     private:
@@ -21,6 +21,13 @@ class first {
         }
           ~first(); //destructor, removes form memory the constructor.   
 };
+
+//Alternative constructor initialization
+
+first::first()
+{
+  //code
+}
 
 
 int main() {
