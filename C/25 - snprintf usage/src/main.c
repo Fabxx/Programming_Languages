@@ -7,7 +7,8 @@ int main(int argc, char const *argv[])
     const char *name = "Revix"; 
                                 
 
-    //printing the strings in the memory buffer provided and stored in here.
+    //printing the strings in the memory buffer provided and stored in here. snprintf handles automatically how many butes have to be stored.
+    //Don't use sprintf, it doesn't handle the memory and might cause a stack corruption
     snprintf(buffer, sizeof(buffer),
         "My name is: %s\n", name);
 
