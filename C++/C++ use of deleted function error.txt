@@ -1,0 +1,21 @@
+error: use of deleted function
+
+cause: passing a parameter without & in main.
+
+error:
+
+class 1 
+{
+public:
+	void func(string1); //string 1 is not *string1.
+}
+
+int main(void)
+{
+	string string1;
+	
+	function(string1) //& missing on string1
+	}
+	
+	this causes a use of deleted  function because the constructor of the string deletes the previous string memory sector, and the values 
+	are not saved anywhere else. like a normal parameter if passed as argument in main, it needs the address operator to copy the memory.
