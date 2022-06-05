@@ -9,7 +9,7 @@
 
 int main()
 {
-	static char *buffer = NULL;
+	static char *buffer = NULL; //if you don't want this to be modified use static const char.
 
 	for (size_t i = 0; i < 10; i++)
 	{
