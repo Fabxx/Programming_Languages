@@ -31,7 +31,8 @@ struct1 return_whole(struct1 str)
 {
 	scanf("%d %d", &str.a, &str.b);
 	return str; //Equivalent of parameter pass. most of the times not needed t return the whole struct
-		    //but just doing inputs via parameter is enough.
+		    //but just doing inputs via parameter is enough. Can be useful to print the whole data via the function
+		    //and now individual variables in printf.
 }
 
 //if the struct is a pointer, you can do like so
