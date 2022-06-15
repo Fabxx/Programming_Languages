@@ -30,7 +30,8 @@ int read_struct_return(struct1 str)
 struct1 return_whole(struct1 str)
 {
 	scanf("%d %d", &str.a, &str.b);
-	return str;
+	return str; //Equivalent of parameter pass. most of the times not needed t return the whole struct
+		    //but just doing inputs via parameter is enough.
 }
 
 //if the struct is a pointer, you can do like so
