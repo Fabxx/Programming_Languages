@@ -2,7 +2,10 @@
 using namespace std;
 
 /*Virtual tells the compiler to create a jump table so that it can 
-call subclass functions through superclass pointers at runtime*/
+call subclass functions through superclass pointers at runtime.
+THis keyword can be useful if you have too many classes and don't want to create
+a new object for each of them. You can use one superclass with dummy functions
+and override them via subclasses from one object.*/
 
 class Car // Base class (Superclass)
 {
