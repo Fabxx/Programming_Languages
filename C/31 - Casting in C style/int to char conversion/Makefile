@@ -2,14 +2,12 @@
 # 'make'        build executable file 'main'
 # 'make clean'  removes all .o and executable files
 #
-#Makefile for C++ compilation and hybrid C/C++ compilation. Don't use for C only compile.
 
-# define the Cpp compiler to use
-CXX = g++
-
+# define the C compiler to use
+CC = gcc
 
 # define any compile-time flags
-CXXFLAGS	:= -std=c++17 -Wall -Wextra -g
+CFLAGS	:= -Wall -Wextra -g
 
 # define library paths in addition to /usr/lib
 #   if I wanted to include libraries not in /usr/lib I'd specify
@@ -53,12 +51,10 @@ INCLUDES	:= $(patsubst %,-I%, $(INCLUDEDIRS:%/=%))
 LIBS		:= $(patsubst %,-L%, $(LIBDIRS:%/=%))
 
 # define the C source files
-SOURCES		:= $(wildcard $(patsubst %,%/*.cpp, $(SOURCEDIRS)))
-C_SOURCES	:= $(wildcard $(patsubst %,%/*.c, $(SOURCEDIRS)))
+SOURCES		:= $(wildcard $(patsubst %,%/*.c, $(SOURCEDIRS)))
 
 # define the C object files 
-OBJECTS		:= $(SOURCES:.cpp=.o)
-C_OBJECTS	:= $(C_SOURCES:.c=.o)
+OBJECTS		:= $(SOURCES:.c=.o)
 
 #
 # The following part of the makefile is generic; it can be used to 
@@ -74,23 +70,20 @@ all: $(OUTPUT) $(MAIN)
 $(OUTPUT):
 	$(MD) $(OUTPUT)
 
-$(MAIN): $(OBJECTS) $(C_OBJECTS)
-	$(CXX) $(CXXFLAGS) $(CFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(C_OBJECTS) $(LFLAGS) $(LIBS)
+$(MAIN): $(OBJECTS) 
+	$(CC) $(CFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS)
 
 # this is a suffix replacement rule for building .o's from .c's
 # it uses automatic variables $<: the name of the prerequisite of
 # the rule(a .c file) and $@: the name of the target of the rule (a .o file) 
 # (see the gnu make manual section about automatic variables)
-.cpp.o:
-	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
-#Rule for c objects, hybrid compile. 
 .c.o:
-	$(CXX) $(CFLAGS) $(INCLUDES) -c $<  -o $@
+	$(CC) $(CFLAGS) $(INCLUDES) -c $<  -o $@
 
 .PHONY: clean
 clean:
 	$(RM) $(OUTPUTMAIN)
-	$(RM) $(call FIXPATH,$(OBJECTS) $(C_OBJECTS))
+	$(RM) $(call FIXPATH,$(OBJECTS))
 	@echo Cleanup complete!
 
 run: all
