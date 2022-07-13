@@ -28,8 +28,8 @@ class test{
 	
 	//creating constructor copies to move the value of the original constructor in other constructors
 	test copy1, copy2;
-	copy 1 = test;
-	copy 2 = copy1;
+	copy1 = test;
+	copy2 = copy1;
 };
 
 int main() {
