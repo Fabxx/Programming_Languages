@@ -25,7 +25,9 @@ int main() {
     /*Without the & symbol, we won't make x a pointer and get the memory address of the previous X.
     THe & symbol makes a variable a pointer, and we make it reference the old memory address of X, which was 
     Filled in the above function. And as you can see below, we get the data from the previous memory address.
-    If we don't do these with pointers, we are COPYING the memory areas, resulting in redundant bytes in memory.*/
+    If we don't do these with pointers, we are COPYING the memory areas, resulting in redundant bytes in memory.
+    The pointer is used to export generated data from a function before being destroyed, and avoids using returns
+    when they're not necessary.*/
     passByVal(x);
     // will still be 10
     printf("Value of x, after passByVal: %d\n", x);
