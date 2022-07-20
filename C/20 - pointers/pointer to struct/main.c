@@ -16,12 +16,11 @@ void input(structure *strptr);
 
 int main(void) {
 
-    int ptr = 0;
+    structure str;
 
-   input(&ptr);
+   input(&str);
 
     return 0;
-
 }
 
 void input(structure *strptr) {
