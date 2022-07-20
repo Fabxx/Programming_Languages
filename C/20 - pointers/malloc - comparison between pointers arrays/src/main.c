@@ -30,13 +30,12 @@ int main()
 	return (0);
 }
 
-char *inputstr() { //the pointer on the function lets you return the string memory address as a value, so you can
-                   //use the string on other functions. in this case is char.
+char *inputstr() { 
 
     char *string;
-
+   
+    //the malloc function allocates for one position n bytes of chars, depending how many we insert.
     string = (char *) malloc(sizeof(char));
-    //here the mem allocation will be multiplied for each char inserted by the user.
 
     fgets(string, sizeof(string), stdin);
     
