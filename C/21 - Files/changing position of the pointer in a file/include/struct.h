@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #define SIZE 100
 #define A_SIZE 200 
-#define POSIZIONE_B SIZE + A_SIZE 
+#define POSIZIONE_B SIZE + A_SIZE  //skipping array and a bytes.
 
 typedef struct {
 
