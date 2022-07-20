@@ -22,6 +22,9 @@ int main() {
     int *arrPtr = &arr[3];
 
     printf("Array element we searched:%d\n", *arrPtr);
+  
+  //ALWAYS FREE THE MEMORY ALLOCATED IF YOU DON'T NEED IT ANYMORE.
+  free(arrPtr);
 
     return 0;
 
