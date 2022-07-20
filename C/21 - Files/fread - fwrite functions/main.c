@@ -10,12 +10,12 @@ int main (FILE* fileptr) {
     if (fileptr == NULL) {
         puts("File not created, aborting\n");
     } else
-    { //here we say, write number 10, with the size of the variable, in this case an integer, 1 time
-      //into the file pointer at the first line, Each line in the file it's like a fileptr++.
-        fwrite(&a, sizeof(int), 1, fileptr);
+    { /*here we say, write a inside the file only one time. DO NOT USE SIZEOF(INT), THE DATA TYPE SIZE CHANGES BASED ON THE ARCHITECTURE.
+        **If we write this program to work on AARCH64 for example, sizeof(int) could be 8 bytes instead of 4 bytes, and we move the
+        **pointer in a wrong way. USE DIRECTLY THE SIZE OF THE VARIABLE YOU HAVE TO SEEK/WRITE AS A STANDARD*/
+        fwrite(&a, sizeof(a), 1, fileptr);
     } //here we read our stored value.
-
-        fread(&a, sizeof(int), 1, fileptr);
+        fread(&a, sizeof(a), 1, fileptr);
         printf("Value from file %d\n", 10);
 
    return 0;
