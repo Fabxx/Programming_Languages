@@ -1,0 +1,4 @@
+char *string is the equivalent of char string[]. 
+
+Both act as pointers, where one has to be initialized and allocated, the other has a static
+or a dynamic allocation based on which variable we use as a size inside the square parenthesis.
