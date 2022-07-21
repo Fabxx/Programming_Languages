@@ -1,5 +1,5 @@
 /*An example of changing the pointer position into the struct. Each struct it's a memory block, in this block we have 
- two variables (See chapter 21 for a more detailed explaination). 
+ two variables (See chapter 29 for a more detailed explaination). 
  
  To access directly the variable we want we need to seek the pointer of the file to the size of the 
  variable in the structure we want to find.*/
