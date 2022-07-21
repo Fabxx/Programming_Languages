@@ -16,11 +16,26 @@ int main() {
    	
       printf("Enter a n%d: ", i);
       scanf("%lf", &number); //% lf for double types
-
-      if (number <= 0.0) {continue;}// If the user enters a negative number, it's not added to the result, proseguendo con l'esecuzione
-
-      sum += number; // sum = sum + number;
+      
+      //If the number condition is respected, the program continues the loop and does the sum.
+      if (number < 10.0) 
+      {
+         continue;
+      }
+      
+      sum += number;
+      
+      //Equivalent of
+      if (number < 10.0)
+      {
+         sum += number;
+      }
+      else
+      {
+         i = 5;
+      }
+      
    }
 
-   printf("Sum = %.2lf", sum);//% lf for double types. We approximate the result with two more decimal places
+   printf("Sum = %.2lf", sum);
 }
