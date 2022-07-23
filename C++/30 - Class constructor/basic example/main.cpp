@@ -22,7 +22,8 @@ class first {
             cout << "Printing with constructor\n";
             cout << "Operation result is: \n" << a+b;
         }
-          ~first(); //destructor, removes form memory the constructor.   
+          ~first(); /*destructor, in this case it does nothing, but if we want we can NULL the values of a and b. A destructor frees the data captured
+                    **we select from the constructor*/
 };
 
 //Alternative constructor initialization
