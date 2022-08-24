@@ -1,0 +1,1 @@
+Structs unlike classes CAN'T have functions in them, only variables.
