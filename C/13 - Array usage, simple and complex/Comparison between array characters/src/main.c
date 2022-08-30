@@ -29,6 +29,8 @@ int main()
 	{
 		puts("the strings are different\n");
 	}
+	
+	//An alternative comparison can be made without string.h, if you save the content of both strings in a char variable, and comapre them directly.
 
 
 	return (0);
