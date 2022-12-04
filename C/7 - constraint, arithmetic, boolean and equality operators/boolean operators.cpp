@@ -54,6 +54,7 @@ int main(){
 	printf("\n");
 	
 	//examples on condition
+	 //writing if (Hunger && forcedToeat) or if (!Hunger && !forcedToeat) is equivalend of putting the ==/!= false/true
 	if(Hunger == true && forcedToeat == false){
 		printf("I'm hungry, but I don't have to eat: %s", risAND?"true":"false");
 		printf("\n");
