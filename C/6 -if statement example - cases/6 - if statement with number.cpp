@@ -1,44 +1,43 @@
 #include<stdio.h>
 
-/*
-Use of the conditional if - else - example:
-this example will cover a classic exercise that calculates if a number
-either even or odd. To do this we will use the if condition (in case the condition is true),
-else (in case the statement is different by having a code block executed)
+//basic example of if statement
 
-the logic is this:
-se (colorDog == "brown spotted") if ()
-then it's true (true)
-otherwise else ()
-the color of the dog is not brown in spots
+int main()
+{
+   int a = 0;
 
-let's get into the exercise
+   if (a < 10) {
+       a++
+   } else if (a > 10) { //in this case if no other conditions are needed after the first if, we can simply write "else" instead of "else if"
+	   printf("a has reached 10\n");
+   }
+	
+   /*NOTE: In some cases you don't need to put the else, because then you're forcing it to enter the block that will do ONLY the instructions in that
+	   else block, and some instructions might be redundant to rewrite. If you need the same instruction for different cases, just do this.
+	NOTE 2: This example is made with files, to understand how files work, go to chapter 20 - FILES.*/
+	
+	FILE *ptr;
+	ptr = fopen("file.txt", "r+");
 
-Piersilvio Spicoli - uniba informatica
-*/
-
-int main(){
-	
-	int number; //variable NOTE: must be of type int!
-	
-	printf("Example n^5 \n");
-	printf("insert a number\n: "); //input
-	scanf("%f", &number);
-	
-	if(number%2 == 0){    
-	
-	/*
-	'number% 2' is an operation that allows us to calculate the remainder of the division.
-	If we divide the number / 2, and the remainder equals zero, the number will be even.
-	If instead the division has the remainder, then that number will be odd
-	
-	NOTE: the% operator is called module, and allows us to calculate the remainder of a division of any data type (int)
-	
-	*/
-		
-		printf("The numbers is even.\n");
-	}else{
-		
-		printf("The number is odd.\n");
+	/*wrong unnecessary case where the write  instruction will happen anyways, and it's redundant. The only difference is that in one case we are creating 
+	  the file if not found, the other case is when we already find the file and we directly write on it*/
+	if (ptr == NULL) {
+		ptr = fopen("file.txt", "w+");
+		fwrite("this", sizeof(char)*5, 1, ptr);
+		fclose(ptr);
+	} else {
+		fwrite("this", sizeof(char)*5, 1, ptr);
+		fclose(ptr);
 	}
+
+	//instead, we can simplify like this:
+	FILE *ptr2;
+	ptr2 = fopen("file.txt", "r+");
+
+	if (ptr2 == NULL) {
+		//create the file only if not found, then afterwards write on it and close.
+		ptr2 = fopen("file.txt", "w+");
+	}
+	fwrite("this", sizeof(char)*5, 1, ptr);
+	fclose(ptr2);
 }
