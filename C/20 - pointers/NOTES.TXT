@@ -1,6 +1,9 @@
-char *string is the equivalent of char string[]. 
+char *string is the equivalent of char string[].
 
 Both act as pointers, where one has to be initialized and allocated, the other has a static
 or a dynamic allocation based on which variable we use as a size inside the square parenthesis.
 
 For a more simpler example about pointers, please check the "Pass by ref vs by value chapter"
+
+NOTE: If you have to change the value of a pointer variable, don't rewrite it with the * symbol, just 
+type the var name and =. Using the * symbol again means that you are reinitializing the pointer to something else.
