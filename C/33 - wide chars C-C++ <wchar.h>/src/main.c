@@ -47,7 +47,7 @@ int main()
 	
 	/*
 	 L considers the const char * string as long char (aka wchar_t, similar to a implicit cast), and discards it's const qualifier. 
-	 this can be done as a argument as well without a variable in a function that requires a wchar_t ad a argument. See the usage 
+	 this can be done as a argument as well without a variable in a function that requires a wchar_t as a argument. See the usage 
 	 of the wcharfunc below:
 	 */
 	
