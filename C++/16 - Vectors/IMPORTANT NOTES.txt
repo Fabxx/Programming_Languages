@@ -5,7 +5,7 @@ std::string or char[] or char *.
 
 std::vector<char*> will act like char *strings[]; where for each position you can receive a undefined number of chars.
 
-this beavior is similar to std::array.
+this behavior is similar to std::array.
 
 Also can be replicated with integers/doubles ecc:
 
