@@ -10,6 +10,9 @@ similar exmaples are char_16t, 32t, and so on, but they still follow ASCII stand
 
 to copy these type of strings instead of strcpy, you have to use wcscpy, from the library <wchar.h>.
 
+wcstombs is used to convert a wchar_t to a const char *.
+wcscat it's used to concatenate two widechar strings.
+
 NOTE: Almost all the C string.h functions have these wide char equivalent functions
 
 C library is <wchar.h>
