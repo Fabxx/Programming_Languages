@@ -29,12 +29,23 @@ int main()
 	wchar_t destination;
 	wcscpy(destination, L"Mystring");
 	/*
-	a wchar_t can also be initialized in two ways to a char/const char: 
-	
-	-if we use sprintf/snprintf/g_strdup_printf (from glib) with "%ls" identifier (this also used to GIVE strings from other char buffers, 
-	 not just initialize).
+	a wchar_t can also be initialized in two ways with a char/const char string: 
 	
 	-if we use the L symbol on a const char initialization (aka L"anystring") to assign a string to a wchar_t.
+	
+	-We can give to a <char> type buffer a wchar_t content if we use sprintf/snprintf/g_strdup_printf (from glib) with "%ls" identifier 
+	 Also %ls can avoid the use of a function to convert to const char *, since wchar_t can be given to a char type,
+	 and print it via %ls:
+	 */
+	wchar_t *mystring = L"my string";
+	const char *container = mystring;
+	char *container2;
+	
+	//writing inside a char buffer content of a wchar_t buffer.
+	snprintf(container2, sizeof(container2), "%ls", mystring);
+	printf("string: %ls\n", container);
+	
+	/*
 	 L considers the const char * string as long char (aka wchar_t, similar to a implicit cast), and discards it's const qualifier. 
 	 this can be done as a argument as well without a variable in a function that requires a wchar_t ad a argument. See the usage 
 	 of the wcharfunc below:
