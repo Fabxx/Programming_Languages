@@ -43,4 +43,5 @@ Essentially, you'll want to:
 Our Discord Group: https://discord.gg/E3SkYGJhju
 
 Thank you! Happy coding!!
+
 Remember: there are no strings, just positioned characters.
