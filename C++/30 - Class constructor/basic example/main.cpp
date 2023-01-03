@@ -1,14 +1,8 @@
 #include <iostream>
 using namespace std;
 
-/*A constructor is a basic function, inside a class, it takes the type "first", normally we would do simple "void sum()" for example
-  and that sum() is a constructor, but with type "void" instead. A constructor in a class can be useful if a class has to do 
-  specific things that needs to be done only when needed, without creating overhead with more functions. 
-  A class constructor can also maintain data at runtime when needed, so the data is stored in memory and doesn't have to be 
-  re-fetched everytime, but will be destroyed as soon the constructor ends.
-  NOTE: It is bad practice to use a constructor to input data, it is useful in specific conditions whereas you have to move/copy/init data
-  of a class, or elaborate the data in that class after you've filled the members. SInce we don't know when exactly the constructor will be
-  constructed when calling the object.*/
+/*A constructor it's a integrated function class. Can also have a type if you want to return something with it. It gets initialized and executed
+  before every other instruction unless it's made static. Useful to initialize data before working on it with other functions.*/
 
 class first {
     private:
@@ -26,7 +20,8 @@ class first {
                     **we select from the constructor*/
 };
 
-//Alternative constructor initialization
+//Alternative constructor initialization, implicitly void. It's always better to write it separately from the class unlike above, to make the code more
+//readable.
 
 first::first()
 {
