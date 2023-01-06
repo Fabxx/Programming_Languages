@@ -3,8 +3,12 @@ char *string is the equivalent of char string[].
 a doulbe pointer can also be declared and then defined like this:
 
 extern char **strings;
+or
+extern char *strings[];
 
-char *string[] = any data initialized;
+in this case, the pointer points to the position 1, allowing multiple character store without a specific size.
+
+char *string[1] = {"any data initialized"};
 
 Both act as pointers, where one has to be initialized and allocated, the other has a static
 or a dynamic allocation based on which variable we use as a size inside the square parenthesis.
