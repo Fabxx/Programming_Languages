@@ -1,5 +1,9 @@
 char *string is the equivalent of char string[].
 
+if we do char string[8] = "xxxxxxxxxx", implicitly is char *string = "xxxxxxx" or
+
+char *string = (char*)malloc(sizeof(char)*8);
+
 a doulbe pointer can also be declared and then defined like this:
 
 extern char **strings;
