@@ -25,6 +25,17 @@ void Fabx::fabcalc()
 
 using namespace Fabx;
 
+//we can also make namespaces inside other mainspaces, call other made functions inside, and so on.
+
+namespace 1
+{
+	void a();
+	namespace 2 
+	{
+		void b();
+	};
+};
+
 int main()
 {
 	Fabx::fabcalc();
