@@ -15,13 +15,13 @@
 
 	 */
 
-typedef struct strarr
+typedef struct
 {
 	__int16_t number;
 	char *name;
 } strarr;
 
-typedef struct structure
+typedef struct
 {
 	__int16_t numbers[2];
 	char *name[2];
