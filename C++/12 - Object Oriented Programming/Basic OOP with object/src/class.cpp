@@ -2,7 +2,10 @@
 using namespace std;
 
 
-//NOTE: members AND variables of the same class don't need an object to be called. those can be called directly
+/*
+NOTE: members AND variables of the same class don't need an object to be called. those can be called directly when defining.
+when calling inside other functions, an object is required, like it happens in test2 class function where we are calling "test"
+from another class function. */
 
 void test::print1() {
     cout << "Printing" << endl;
