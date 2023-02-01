@@ -5,7 +5,8 @@
  * 		  when switching from a function call to the other.
  * 		 
  * Pros:
- * 		 -Helps reducing/removing overhead for small functions switching.
+ * 		 -Helps reducing/removing overhead for small functions switching by removing jump instructions and adding the function body
+ 		  directly instead.
  * 		 -Increases code efficiency, and this operation is done at compile time.
  * 		 -saves the overhead of push/pop variables on the stack when function is called and of a return call from a function.
  * 		 -Context specific optimization for the inline body from the compiler.
