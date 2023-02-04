@@ -13,33 +13,23 @@
 #include <iostream>
 using namespace std;
 
-//typename indicates generic type, writing class T is equivalent to typename T. the template can accept constant types.
-//Each function writed below the template, is linked to the template itself until you close the last bracket of that function
-//In this case, the template it's valid until the class finishes.
+/*typename indicates generic type, writing class T is equivalent to typename T. the template can accept constant types.
+  Each function writed below the template, is linked to the template itself until you close the last bracket of that function
+  In this case, the template it's valid until the class finishes.*/
 template<typename Z, size_t N> //Z, parameter type. 
 
 class test{    
         public:  
-                Z value[N]; //array of integers which will become int.
-	
-	test() {
-		cout << "Constructor called!" << endl;
-	}
-	
-	//creating constructor copies to move the value of the original constructor in other constructors
-	test copy1, copy2;
-	copy1 = test;
-	copy2 = copy1;
+		//array of integers which will become int.
+                Z value[N];
 };
 
 int main() {
-
-        test<int, 3> templateExample; //Object declaration with template
-	//test it's the class, int it's the type on Z, 3 it's the value on size_t N.
-	//TemplateExample it's the object decalred, which will be used for the array.
+	//Calling class object, with template arguments specified.
+        test<int, 3> templateExample;
+	//constructor call syntax: test<int, 3>();
 
         for(int i = 0; i < 3; i++){
-		test<int, 3>(); //The constructor can be called with this syntax along with the template parameters.
                 templateExample.value[i] = i+5;
                 printf("%d ", templateExample.value[i]); //Output: 5 6 7
         }
