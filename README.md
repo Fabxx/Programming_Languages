@@ -38,10 +38,3 @@ Essentially, you'll want to:
 8. If you go to your repository on GitHub, you'll see a "Compare & pull" request button. Click on that button.
 9. Now submit the pull request (PR).
 10. If I accept your PR, then it will now be in the code, otherwise I will leave comments on how to improve your PR.
-
-## Contact
-Our Discord Group: https://discord.gg/E3SkYGJhju
-
-Thank you! Happy coding!!
-
-Remember: there are no strings, just positioned characters.
