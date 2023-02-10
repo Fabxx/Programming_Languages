@@ -42,6 +42,6 @@ Essentially, you'll want to:
 ## IMPORTANT NOTES
 -Do NOT submit PRs with folders containing compiled binaries/.o files
 
--You can only share source code files/folders, along side with the compilation method (make or cmake is preferred, or a simple script file to compile with gcc/g++ commands).
+-You can only share source code files/folders, along side with the compilation method (in case of C/C++ make or cmake is preferred, or a simple script file to compile with gcc/g++ commands).
 
 -You are not forced to follow a indentation style, just make sure the code is properly readable.
