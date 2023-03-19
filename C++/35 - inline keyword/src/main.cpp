@@ -1,8 +1,8 @@
 /**
  * @file main.cpp
  * @author Fabxx
- * @brief Inline it's used on functions that have a short execution time, longer than the switch time in memory from the CPU
- * 		  when switching from a function call to the other.
+ * @brief Inline it's used on functions that have a shorter execution time, than the switch time in memory from the CPU
+ * 		  when switching from a function call to the other. (function switch overhead)
  * 		 
  * Pros:
  * 		 -Helps reducing/removing overhead for small functions switching by removing jump instructions and adding the function body
