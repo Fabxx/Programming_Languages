@@ -2,6 +2,7 @@
  * @file main.c
  * @author Fabxx
  * @brief Atoi converts string numbers into actual numbers.
+	  NOTE: For doubles use "atof".
  * @version 0.1
  * @date 2023-01-31
  * 
