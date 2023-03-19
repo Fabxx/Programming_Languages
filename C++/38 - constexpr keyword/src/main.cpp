@@ -16,6 +16,11 @@
 		-Does not reduce the overhead in terms of switch of the CPU between short functions, but only reduces the performance impact for the 
 		 operations of them. Useful for bigger functions rather than small ones, or if multiple small calculations have to be done.
 		-Removes function calls as it calculates them at compile time.
+		
+		NOTE: For proper usage of this keyword, the variables to pre-calculate must be already initialized
+		      and used somewhere to calculate at compile time already. If we have a uninitialized variable
+		      the compiler won't know what we are trying to pre-calculate. In this case as you can see both
+		      s and x are already initialized, and it can calculate the size of the array as well.
 
  * @version 0.1
  * @date 2023-01-31
