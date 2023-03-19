@@ -1,3 +1,5 @@
+on GCC/G++ compilers:
+
 in a for iteration, writing i++ makes the compiler retreive the value first, then incrementing it
 
 writing ++i, the compiler doens't care of the actual value and increases it directly, it discards the value.
