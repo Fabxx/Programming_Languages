@@ -4,7 +4,7 @@ if we do char string[8] = "xxxxxxxxxx", implicitly is char *string = "xxxxxxx" o
 
 char *string = (char*)malloc(sizeof(char)*8);
 
-a doulbe pointer can also be declared and then defined like this:
+a double pointer can also be declared and then defined like this:
 
 extern char **strings;
 or
@@ -21,3 +21,14 @@ For a more simpler example about pointers, please check the "Pass by ref vs by v
 
 NOTE: If you have to change the value of a pointer variable, don't rewrite it with the * symbol, just 
 type the var name and =. Using the * symbol again means that you are reinitializing the pointer to something else.
+
+
+NOTE: DO NOT do this:
+
+int *a = 10
+
+while (a < b) {
+  *a++;
+  }
+  
+ in this case *a++ means that we are increasing the POINTER POSITION, not the value stored inside the pointer.
