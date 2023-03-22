@@ -32,3 +32,13 @@ while (a < b) {
   }
   
  in this case *a++ means that we are increasing the POINTER POSITION, not the value stored inside the pointer.
+ 
+ *++;
+
+is equivalent to
+
+*a;
+a++; 
+
+where the ++ increment operator has more precedence than the dereference itself, so before dereferencing it increases the entire pointer position.
+
