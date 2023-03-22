@@ -24,6 +24,7 @@ int main() {
         }
     
   //can also do = arr[3] if int *arr[MAX] is declared like this already.
+  //NOTE: the number in the brackets matches the position in the array, starting from 0.
     int *arrPtr = &arr[3];
 
     printf("Array element we searched:%d\n", *arrPtr);
