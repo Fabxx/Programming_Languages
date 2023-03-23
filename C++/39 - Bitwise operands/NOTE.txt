@@ -1,0 +1,13 @@
+It is important to notice that the binary lenghts of the numbers depends on the architecture we are compiling for,
+and the types we are using.
+
+If we use normal "int" by default it's 64bits, which is represented with 8 numbers of 4 bytes:
+
+1 = 00000001 where 8 x 4 = 64.
+
+The bitwise operators can also be used in assignation context:
+
+a ^= 10 equivalent of: a = a ^ 10;
+
+
+THESE OPERANDS WORK IN C TOO.
