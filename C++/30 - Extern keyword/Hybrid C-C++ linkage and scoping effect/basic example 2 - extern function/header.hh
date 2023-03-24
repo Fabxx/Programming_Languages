@@ -1,0 +1,7 @@
+#ifndef CB89F453_820F_41E9_A542_DCA0A1F5FB7F
+#define CB89F453_820F_41E9_A542_DCA0A1F5FB7F
+
+//extern function declaration.
+extern void a();
+
+#endif /* CB89F453_820F_41E9_A542_DCA0A1F5FB7F */

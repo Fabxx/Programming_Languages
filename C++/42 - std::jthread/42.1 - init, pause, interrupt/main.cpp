@@ -69,8 +69,7 @@ hardware_concurrency [static]
     Detect hardware concurrency (public static member function)
 
 
-NOTE: Thread::join blocks waiting for the ‘joined’ thread to terminate. Useful if each thread has to work on its own resource.
-      (aka its function.), granting a multithreading without race conditions and deadlocks caused by the mutex.
+NOTE: Thread::join blocks waiting for the ‘joined’ thread to terminate. Useful if we want threads to join ONLY One after the other.
 
       Thread::detach means that the ‘detached’ thread will be independent and doesn’t need 
       to terminate before the current thread can terminate. Practices to handle them are seen ahead
@@ -78,10 +77,11 @@ NOTE: Thread::join blocks waiting for the ‘joined’ thread to terminate. Usef
       
       And because of this, YOU NEED
       TO IMPLEMENT a wait time for the main thread if others are detached, so that the main thread won't finish
-      before the other threads haven't finished. To do so, simply use the std::chrono 
-      functions, and calculate the start/end time execution of a thread, and tell to the main thread to 
-      wait until the execution time has been reached. There is an example of this in the chapter
-      42.7, where we simply put the main thread on wait after detaching the threads.
+      before the other threads haven't finished. To do so, you can either:
+
+      -calculate the execution time of a thread with std::chrono, and make the main thread wait for the estimated execution time.
+
+      -Create a main loop where the threads get enabled only by a specific condition, calculate the execution time for each thread,
       
  * @version 0.1
  * @date 2023-03-22
@@ -136,6 +136,9 @@ int main(void)
     /*detach thread for independent execution (becomes child process).
       NOTE: this detach is ASYNCRONOUS, which recalls the problem mentioned above.
             Also, once detached, if you want it to re-join the main thread, check if it's joinable.
+
+      NOTE 2: even if the thread finishes its execution, it MUST Be stopped or the child thread remains detached
+              but inactive and can't be reused, leading to a std::system exception when trying to detach again.
     */
     child_thread.detach();
 
@@ -143,7 +146,7 @@ int main(void)
         child_thread.join();
     }
 
-    thread_pause.join();
+    thread_paused.join();
     
     return 0;
 }

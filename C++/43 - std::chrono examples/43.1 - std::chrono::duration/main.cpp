@@ -66,6 +66,16 @@ void elapsed_time_system_clock()
   std::cout << "Elapsed time: " << elapsed << std::endl;
 }
 
+/*NOTE: we can also create an object of the namespace:
+        
+        std::chrono::high_duration_clock start;
+        
+        auto start_var = start.now()
+        
+        DO NOT TRY TO SUBTRACT END AND START WHILE THOSE ARE OBJECTS, ALWAYS SAVE THE 
+        VALUES IN A VARIABLE.
+        */
+
 
 int main(void)
 {
