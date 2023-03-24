@@ -12,6 +12,8 @@
  *              -owner_before: checks if the pointer precedes other in implementation defined owner-based (as opposed to value-based) order.
  *                             in short words, if the pointer has the same ownership as the other pointers, but it was applied to it
  *                             before the other pointers or not.
+ *              std::make_shared makes the class object pointer share its resource, and can initialize
+ *              other pointers to that same resource.
  * @version 0.1
  * @date 2023-03-24
  * 
@@ -35,7 +37,9 @@ void A::something()
 
 int main(void)
 {
-    std::shared_ptr<A> pointer1(new A()), pointer2(new A());
+    std::shared_ptr<A> pointer1 = std::make_shared<A>();
+    //pointer 2 being initialized with A resource of pointer1.
+    std::shared_ptr<A> pointer2(pointer1);
 
     pointer1->something();
     pointer2->something();
