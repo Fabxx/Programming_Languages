@@ -1,0 +1,18 @@
+RAII (Resource acquisition is initialization) is a technique used in multi-threaded programs
+
+
+often used for controlling mutex locks in multi-threaded applications. 
+In that use, the object releases the lock when destroyed. 
+Without RAII in this scenario the potential for deadlock would be 
+high and the logic to lock the mutex would be far from the logic to unlock it. 
+With RAII, the code that locks the mutex essentially includes the logic that the lock 
+will be released when execution leaves the scope of the RAII object.
+
+TL-DR: RAII Involves the use and handling of mutexes for multi threading to avoid deadlocks on them,
+        and the use of heap-allocated objects shared with smart pointers.
+
+        RAII depends on heap-based objects to be implicitly or explicitly deleted along all possible execution paths, 
+        in order to trigger its resource-releasing destructor (or equivalent).
+
+
+
