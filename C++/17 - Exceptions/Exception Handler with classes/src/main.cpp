@@ -30,7 +30,7 @@ public:
 		if (x == 10) {
 			try {
 				throw x;
-				flag = true;
+				this->flag = true;
 			}
 			catch(int catchering) { //NOTE: exception catcher MUST be declared here.
 				cout << "Exception Occurred on Value " << catchering << endl;
@@ -53,7 +53,8 @@ int main() {
 
 	tester.input();
 	tester.exception();
-	if(true) {
+	//if the flag is true, print the exception.
+	if(tester.flag) {
 		tester.print();
 	}
 
