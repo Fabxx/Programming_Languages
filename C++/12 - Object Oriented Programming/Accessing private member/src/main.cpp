@@ -2,6 +2,7 @@
  * @file main.cpp
  * @author your name (you@domain.com)
  * @brief This program shows how can we access private members in a class.
+ 	  NOTE: for private functions use the constructor to access them once defined.
  * @version 0.1
  * @date 2021-10-11
  * 
