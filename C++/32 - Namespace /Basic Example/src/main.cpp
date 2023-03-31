@@ -2,6 +2,8 @@
  * @file main.cpp
  * @author Fabx
  * @brief A namespace it's useful to distinguish functions that might have the same name, and avoids conflicts.
+ 	  NOTE: a namespace it's also useful to create new function, and call them without the need of a 
+	        constructor unlike classes, can also be called/integrated in classes.
  * @version 0.1
  * @date 2022-07-23
  * 
