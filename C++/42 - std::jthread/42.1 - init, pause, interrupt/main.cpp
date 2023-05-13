@@ -12,8 +12,8 @@
  *            C_Cpp.default.cppStandard": "c++20"
  *          
 *       FEATURES:
- *          -Each time we call a thread to join, the first thread is executed, then when it finishes
- *          the other gets executed (sequential join, but only if we do basic joins.).
+ *          -Each time we call a thread to join and we have multiple threads, the first thread is executed, then when it finishes
+ *          the other gets executed (sequential join for each thread.join(), but only if we do basic joins.).
  * 
  *          -It is also possible to send an interrupt signal to the thread, in a function that has a std::token
  *          to send the signal.
@@ -69,10 +69,11 @@ hardware_concurrency [static]
     Detect hardware concurrency (public static member function)
 
 
-NOTE: Thread::join blocks waiting for the ‘joined’ thread to terminate. Useful if we want threads to join ONLY One after the other.
+NOTE: using join on a thread, blocks waiting for the ‘joined’ thread to terminate. 
+      Useful if we want threads to join ONLY One after the other.
 
-      Thread::detach means that the ‘detached’ thread will be independent and doesn’t need 
-      to terminate before the current thread can terminate. Practices to handle them are seen ahead
+      using detach() means that the ‘detached’ thread will be independant and doesn’t need 
+      to terminate if we want to execute other threads. Practices to handle them are seen ahead
       in the chapters. 
       
       And because of this, YOU NEED
