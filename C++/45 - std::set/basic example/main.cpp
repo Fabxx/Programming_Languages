@@ -157,9 +157,10 @@ int main(void)
         }
     }
 
-    /*making element comparison with iterator. NOTE: contains will always return the element since
-      we are comparing the value that we find already. it's like saying:
-      my_iterator = 10 if set.contains(iterator) which is 10, of course it will find it because it's already there! */
+    /*making element comparison with iterator. NOTE: in this specific case, 
+      contains will always return the element since
+      we are comparing the value that we find already.:
+    */
     for (my_iterator = set.begin(); my_iterator != set.end(); ++my_iterator) {
         if (set.contains(*my_iterator)) {
             std::cout << *my_iterator << ": found" << std::endl;
@@ -168,9 +169,9 @@ int main(void)
         }
     }
 
-    //same scan but instead of using iterator, we can use a dedicated variable of the type we have stored, to look 
-    //for specific elements. Contains will look for the elements of S this time.
-    //so it's like: if set contains string or string 2.
+    /*same scan but instead of using iterator, we can use a dedicated variable of the type we have stored, to look 
+      for specific elements. Contains will look for the elements of S type this time.
+      so it's like: if set contains string or string 2.*/
     for (std::string s : {"string", "string2"}) {
         if (set.contains(s)) {
             std::cout << s << ": found" << std::endl;
