@@ -1,6 +1,6 @@
 ; EIP in x86 is the Instruction Pointer, which points to the next instruction in memory to
 ; be executed. normally in GDB when you hit a breakpoint, you can see the instruction 
-; pointer by the EIP with a -> or => near the memory address.
+; pointed by the EIP with a -> or => near the memory address.
 
 ; when jmp is used, the ESP register which contains the pointer of the base stack address
 ; to reach, gets updated with the new address of the stack frame of "func"
