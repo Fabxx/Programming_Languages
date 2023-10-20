@@ -1,7 +1,16 @@
 #include <iostream>
-int main(int argc, char const *argv[])
+
+void cstring(char *string)
 {
-//std::stringhas a constructor fromconst char *.This means that it is legal to write:
-const char* str="hello";
-std::string s = str;
+  std::cout << string << std::endl
+}
+
+int main(void)
+{
+  std::string s = "hello";
+
+  //c_str() operator casts a C++ string into a C string, (aka char*/const char *)
+  cstring(s.c_str());
+
+  return 0;
 }
