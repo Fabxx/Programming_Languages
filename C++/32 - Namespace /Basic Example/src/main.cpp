@@ -13,6 +13,7 @@
 
 #include <iostream>
 
+// NOTE: you can also put in variables, structures, classes ecc
 namespace Fabx 
 {
 	void fabcalc();
