@@ -17,6 +17,13 @@
 namespace Fabx 
 {
 	void fabcalc();
+
+	// Can also Wrap C structures into C++ namespace. note that to wrap Structure functions you need to write or implement an existing wrapper.
+
+	struct a 
+	{
+	  int a;
+	};
 }
 
 void Fabx::fabcalc()
