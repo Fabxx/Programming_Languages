@@ -1,0 +1,12 @@
+in C/C++ you can initialize arrays and whole struct members with {}. So for example:
+
+struct data
+{
+  int a;
+  int b;
+  int c;
+};
+
+data str;
+
+str{} or str = {}
