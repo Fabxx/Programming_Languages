@@ -1,4 +1,4 @@
-in C/C++ you can initialize arrays and whole struct members with {}. So for example:
+in C 23/C++ 11 and above you can initialize arrays and whole struct members with {}, which initializes the vars to zeroes. So for example:
 
 struct data
 {
