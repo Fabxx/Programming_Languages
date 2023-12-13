@@ -1,3 +1,0 @@
-/home/fab/Scrivania/cmake test gtk/build/CMakeFiles/main.dir
-/home/fab/Scrivania/cmake test gtk/build/CMakeFiles/edit_cache.dir
-/home/fab/Scrivania/cmake test gtk/build/CMakeFiles/rebuild_cache.dir
