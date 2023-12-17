@@ -21,8 +21,9 @@ func main() {
 	//declaration types
 	var name = "Fabx"
 	var name1 string = "Fabxx"
+	//implicit type, similar to "auto" in C++ but there is no type written.
 	name3 := "string"
-	//uninitialized var
+	// creating uninitialized var. This is the only syntax that allows it, with both var and typename
 	var name2 string
 
 	/*you can use Println which prints the next strings on a new line each variable, but for each var a new Println instruction is
