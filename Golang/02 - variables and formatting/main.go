@@ -21,8 +21,12 @@ func main() {
 	//declaration types
 	var name = "Fabx"
 	var name1 string = "Fabxx"
-	//implicit type, similar to "auto" in C++ but there is no type written.
+	
+	/*Declaration with implicit type, similar to "auto" in C++ but there is no type written.
+	  it determines the type from the data assigned. NOTE: once created if you need to reassign the variable
+	  you  just need to type name3 = "something", the := syntax is used only for initialization*/
 	name3 := "string"
+	
 	// creating uninitialized var. This is the only syntax that allows it, with both var and typename
 	var name2 string
 
