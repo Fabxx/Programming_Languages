@@ -1,0 +1,23 @@
+In order for the compiler to recognize all the declarations, the header files must be put in the same order when those are referenced.
+
+Also note to put always the standard libraries before any custom library made by you.
+
+example:
+
+main(){
+  setup4();
+  setup3(setup2);
+  
+  order:
+
+#include <lib1.h>
+
+void setup4();
+
+#include <lib2.h>
+void setup3();
+
+#include <lib3.h>
+void setup2();
+
+
