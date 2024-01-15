@@ -70,7 +70,7 @@ int main(void)
     char *allocation = (char*)malloc(sizeof(char)*10);
 
     // always free a pointer after usage.
-    free(*allocation);
+    free(allocation);
 
 
     // ARRAYS
