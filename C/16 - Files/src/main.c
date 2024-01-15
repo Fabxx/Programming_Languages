@@ -72,7 +72,7 @@ int main(void)
          free(obj.string);
     }
 
-    //moves pointer of file into beginning of string bytes, can use to read/overwrite specific variable.
+    //moves pointer of file into beginning of obj.b bytes, can use to read/overwrite specific variable.
     fseek(myfile, sizeof(obj.a), SEEK_SET);
     
     //tells the position of the pointer. will print 4 because one int is 4 bytes and skips 0-3. (if 32 bit by default)
