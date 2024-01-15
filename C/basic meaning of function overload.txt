@@ -1,3 +1,0 @@
-A overloaded function is a function that has arguments. The more arguments it has, the more overloaded will become.
-
-int main(int argc, char argv[]) is a overloaded function.
