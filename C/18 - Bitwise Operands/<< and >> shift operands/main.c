@@ -2,10 +2,10 @@
  * @file main.cpp
  * @author Fabxx
  * @brief  -Left shift operand "<<" applies an operation of power on the used variable, alongside a multiplication.
- *          in the example below, a << b is equivalent of 5 * 2^5, where 2 is the base applied on b, and it's elevated by
+ *          a << b is equivalent of a * 2^b, where 2 is the base applied on b, and it's elevated by
  *          b itself, moving the binary digits of the numbers.
  *          
- *          -Right shift operand ">>", same operation as above, but instead it's divided.
+ *          -Right shift operand ">>", same operation as above, but instead it uses a division.
  * 
  *          Limit cases:
  * 
