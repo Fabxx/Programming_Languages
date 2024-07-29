@@ -1,7 +1,8 @@
 /* 
     A pointer represents a memory address, which then contains a value.
 
-    Pointers can only be initialized with other pointers, or with memory using malloc functions.
+    Pointers can only be initialized with other pointers (can also assign a pointer value by dereferencing a normal variable with the 
+    dereference operator &), or with memory using malloc functions
 
     Pointers allow to pass values by reference instead of copying the actual value in memory.
 
