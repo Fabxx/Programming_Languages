@@ -1,3 +1,0 @@
-/home/fab/Scrivania/Objects as parameters/CMakeFiles/main.dir
-/home/fab/Scrivania/Objects as parameters/CMakeFiles/edit_cache.dir
-/home/fab/Scrivania/Objects as parameters/CMakeFiles/rebuild_cache.dir
