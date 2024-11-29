@@ -1,19 +1,23 @@
 /**
  * @file anotherHeader.h
  * @author Fabxx
- * @brief
+ * @brief  
+             Behavior of header guards with #ifndef and #define:
+
+               -In the header file you type the code prototype.
+
+               -In the associated source file, you #include and develop the prototypes. 
+                This will copy only ONCE the prototypes from the header, and will define the
+                header guard.
+
+                -When including in more source files, the developed functions won't be copied again, but instead
+                the first copy will be referenced.
  * 
- *              -All header files should have header guards to avoid declaration duplication issues.
-                 The first include will copy the declarations in the respective source code, but after
-                 that, all other #include directives will referr to the already copied definitions in 
-                 the source file, because the header has already been defined.
  * 
  *              -A good naming convention to avoid conflicts with header guards is to have complex names
  *               with uppercase and underscores.
  * 
- *              - #pragma once preprocessor directive has the same behavior as header guards. 
- *               However this is not defined by the C++ standard and some compilers may not 
- *               support it.
+ *              - #pragma once behaves like header guards but it's not standard C++, some compilers might not support it.
  * @version 0.1
  * @date 2024-10-04
  * 
