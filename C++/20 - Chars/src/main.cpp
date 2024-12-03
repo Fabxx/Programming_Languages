@@ -33,6 +33,8 @@
                 -It is preferred to use \n over std::endl. while the escape sequence
                  only moves the cursor to the next line, std::endl also flushes 
                  the output buffer. C++ Automatically handles the output buffer when needed.
+
+                 -char8_t is available since C++ 20 and supports UTF-8
  * 
  * 
  *        
