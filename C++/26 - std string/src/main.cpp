@@ -15,21 +15,12 @@
             -std::ws is one of the input manipulators. Allows to ignore white spaces and \n newline characters. 
              if \n is left in the buffer the next std::cin catches it, and skips the input. 
 
-            -String literals are C strings by default. To create std::string literals use the string literals "s" suffix.
-             Both are fine to use. 
+            -To create a std::string literal use the "s" suffix. Default string literals are const char * 
 
         NOTES:
-            -Don't pass std::string by value, it's an expensive copy. Pass by reference or use std::string_view (covered further)
-
-            -You can return std::string by value, move semantics make it less expensive as the object is destroyed at return
-             and does not generate a copy.
-
-            -If returning a C-style string, use std::string_view return type on the function. (unless you need to return as C string.)
+            -Don't pass std::string by value, it's an expensive copy. Returning by value it's fine.
 
             -a std::string literal excludes by default the implicit \n newline character, which is kept in C strings.
-
-            -Don't use constexpr on std::string, works only on C++ 20/23 and only in some cases. If you need this behavior, use 
-             std::string_view.
 
  * @version 0.1
  * @date 2024-12-12
