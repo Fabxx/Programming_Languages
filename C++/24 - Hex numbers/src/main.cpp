@@ -17,7 +17,7 @@
 
               n x 4 where:
 
-                -n is the number of bits
+                -n is the number of single digit bytes
 
                 -4 is the base of the hex bits. 
 
