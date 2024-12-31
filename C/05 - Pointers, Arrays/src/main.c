@@ -12,6 +12,8 @@
 
     Pointer initialization requires the * symbol before the var name.
 
+    Remember that variable identifiers will be actual memory locations for the CPU.
+
     In the struct chapter we will cover struct pointers.
 
     Array indexes start from 1 when typing them in code, but memory indexing starts from 0,
