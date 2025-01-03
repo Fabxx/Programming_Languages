@@ -107,6 +107,7 @@ int main(void)
     /* Pointers with memory addresses must be initialized in this way, here's an example
         Note that i cast the value to let it interpret as a pointer and not a number.
         Be careful when assigning addresses because they contain random data.
+        THis is an example with char but any data type can be used.
     */
 
     char *addr = (char*)0x14789520;
