@@ -1,12 +1,10 @@
 # Use cases
 
--`&` it's used to test bits
+-`&` it's used to test and clear bits
 
 -`|` it's used to set bits.
 
 -Clearing bits means setting them to `0`
-
--Setting bits can be both 1 or 0.
 
 In embedded programming these operators are useful to switch pin states
 
