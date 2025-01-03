@@ -4,13 +4,21 @@
 
 -`|` it's used to set bits.
 
+-Clearing bits means setting them to `0`
+
+-Setting bits can be both 1 or 0.
+
 In embedded programming these operators are useful to switch pin states
 
-you can also check if a number is even or odd by using bitwise & operations with a single bit mask that
+# Parity check
 
-can be 1 (to check if it's odd) or 0 (to check if it's even). You can pick any pair of bits at any position.
+-Use a bitmak of 1 (odd) or 0 (even) 
 
-NOTE: Mask value can be any number depending on the case. Can be binary, decimal or hexadecimal
+If you want to switch/test specific bit positions then you first need to know which binary sequence you need
+
+that will produce the result you want. Then use the corresponding number in hex/dec
+
+can be 1 (to check if it's odd) or 0 (to check if it's even).
 
 example:
 
@@ -20,7 +28,7 @@ if (num & 1) {
 
   }
 
-This checks the least significant bit `LSB` of a given binary sequence, and tests the bits with the mask to determine
+This checks the least significant bit `LSB` of a given binary sequence, and tests the bit with the mask to determine
 the parity of the number.
 
 # Alternative for parity check
