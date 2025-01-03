@@ -113,7 +113,10 @@ int main(void)
       With types that match the lenght this is not needed.
 
       NOTE: Data type visibility may vary based on the compiler, it is important for portability
-            to use standard types with common sizes.
+            to use standard types with common sizes. Using stdint.h library helps in using
+            fixed size data types for portability. So when you expect a pointer/variable 
+            of a exact size you can use fixed size types. Default types may have amiguos
+            sizes depending on the compiler
       */
 
 
