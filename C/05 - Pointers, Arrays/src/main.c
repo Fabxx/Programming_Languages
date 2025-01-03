@@ -91,6 +91,8 @@ int main(void)
     /*32 bit address, the cast makes it pointer and not integer.
       Note that you should assign addresses like this only when you know
       what to expect from a specific address like in embedded systems.
+      In this case the address of raw variable contains another memory address.
+      A pointer to a pointer to be precise.
       */
     int *rawAddressInitExample = (int*)0x20000000; 
     
