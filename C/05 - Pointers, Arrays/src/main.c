@@ -19,6 +19,9 @@
     Array indexes start from 1 when typing them in code, but memory indexing starts from 0,
     so if you need to insert 3 numbers in a array of ints for example, you need to give to it
     size of 4, then in loop it will go from 0 to 3.
+
+    When using a pointer type, that type decides the behavior of the operations carried
+    on the pointer variable
 */
 
 #include <stdio.h>
@@ -44,7 +47,11 @@ int main(void)
     printf("Address of y: %p\nValue of y: %d\n", &y, y);
 
     /* If variabile is already a pointer, it will need * to access the value.
-       THis time we don't need & for the memory address, since z is already a pointer.*/
+       This time we don't need & for the memory address, since z is already a pointer.
+       
+       So "z" is the memory address of z itself, "*z" shows the memory address of y
+       stored in z.
+       */
 
     int *z = &y;
 
