@@ -19,10 +19,6 @@
     Array indexes start from 1 when typing them in code, but memory indexing starts from 0,
     so if you need to insert 3 numbers in a array of ints for example, you need to give to it
     size of 4, then in loop it will go from 0 to 3.
-
-    When using a pointer type, that type decides the behavior of the operations carried
-    on the pointer variable. for example if i print a char* data type of a long number,
-    it will only print 1 byte, if i print a int* data, it will print 4 bytes.
 */
 
 #include <stdio.h>
@@ -83,6 +79,38 @@ int main(void)
     // always free a pointer after usage.
     free(allocation);
 
+    // POINTER SECTION - POINTER OPERATIONS
+
+    /* Pointers with memory addresses must be initialized in this way, here's an example
+        Note that i cast the value to let it interpret as a pointer and not a number.
+        This is an example with char but any data type can be used.
+
+        Let's make an example with operations
+    */
+
+    /*32 bit address, the cast makes it pointer and not integer.
+      Note that you should assign addresses like this only when you know
+      what to expect from a specific address like in embedded systems.
+      */
+    int *rawAddressInitExample = (int*)0x20000000; 
+    
+    int number = 0x10FF470D; //4 bytes, type is 32 bit. This is a hex number, not a memory address.
+
+    char *address = (char*)&number; //obtain memory address of number variable.
+
+    printf("address of char: %p\tnumber contained in address: %x\n", address, *address);
+
+    /*The print will print the memory address of the char and then the value stored in it.
+      However in this case, it will print only the last two digits of the value. 
+      Since the char type by default is 1 byte it will only consider the last byte of the number.
+
+      So the pointer data type determines how many bytes to elaborate on a pointer, based on its size.
+
+      We can use a for loop and scroll through the pointer to obtain the rest of the data byte per byte.
+
+      With types that match the lenght this is not needed.
+      */
+
 
     // ARRAYS
 
@@ -111,15 +139,6 @@ int main(void)
     // to change a pointer state, you must write the pointer with the * symbol
 
     *flag = !*flag;
-
-    /* Pointers with memory addresses must be initialized in this way, here's an example
-        Note that i cast the value to let it interpret as a pointer and not a number.
-        Be careful when assigning addresses because they contain random data.
-        THis is an example with char but any data type can be used.
-    */
-
-    char *addr = (char*)0x14789520;
-    
 
     return 0;
 }
