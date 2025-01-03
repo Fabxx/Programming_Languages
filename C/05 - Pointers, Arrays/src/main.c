@@ -111,6 +111,9 @@ int main(void)
       We can use a for loop and scroll through the pointer to obtain the rest of the data byte per byte.
 
       With types that match the lenght this is not needed.
+
+      NOTE: Data type visibility may vary based on the compiler, it is important for portability
+            to use standard types with common sizes.
       */
 
 
