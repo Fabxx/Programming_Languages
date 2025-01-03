@@ -31,3 +31,25 @@ the parity of the number.
 
 # Alternative for parity check
 Using the module operation with `n%2==0` comparison.
+
+
+# Bit setting and clearing (method 1)
+
+I want to change the 6th bit of 8.
+
+binary sequence: `00001000`
+
+bit mask: `000001000`
+
+operation:
+
+00001000 |
+00000100 =
+--------
+00001100 the 6th bit has been set.
+
+a faster approach to calculate the bitmask to use is to combine the NOT bitwise operand on it,
+it's a shortcut to see faster which bits will be affected by your bitmask. So you write it like this:
+
+bitmask: ~(00001100) the bitmask will be inverted with the NOT so you can already see which bits will be used
+                     for switching or not.
