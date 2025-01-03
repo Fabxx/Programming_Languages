@@ -6,7 +6,7 @@
  *         0 1 = 1
  *         0 0 = 0
  *         1 0 = 1
- *         1 1 = 0 //always returns 0 if the two bits are equal.
+ *         1 1 = 0 //always returns 1 if the two bits are different.
  * 
  *          In this example we take two numbers and perform the OR op. on their bits.
  * 
