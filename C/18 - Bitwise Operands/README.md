@@ -16,3 +16,6 @@ if (num & 1) {
 
 This checks the least significant bit `LSB` of a given binary sequence, and tests the bits with the mask to determine
 the parity of the number.
+
+# Alternative
+Using the module operation with `n%2==0` comparison.
