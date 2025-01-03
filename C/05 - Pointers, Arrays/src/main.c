@@ -21,7 +21,8 @@
     size of 4, then in loop it will go from 0 to 3.
 
     When using a pointer type, that type decides the behavior of the operations carried
-    on the pointer variable
+    on the pointer variable. for example if i print a char* data type of a long number,
+    it will only print 1 byte, if i print a int* data, it will print 4 bytes.
 */
 
 #include <stdio.h>
