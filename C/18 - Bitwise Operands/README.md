@@ -20,10 +20,10 @@ can be 1 (to check if it's odd) or 0 (to check if it's even).
 
 example:
 
-if (num & 1) {
+if ((num & 1) == 1) {
 
   print("odd");
-
+  
   }
 
 This checks the least significant bit `LSB` of a given binary sequence, and tests the bit with the mask to determine
@@ -47,9 +47,3 @@ operation:
 00000100 =
 --------
 00001100 the 6th bit has been set.
-
-a faster approach to calculate the bitmask to use is to combine the NOT bitwise operand on it,
-it's a shortcut to see faster which bits will be affected by your bitmask. So you write it like this:
-
-bitmask: ~(00001100) the bitmask will be inverted with the NOT so you can already see which bits will be used
-                     for switching or not.
