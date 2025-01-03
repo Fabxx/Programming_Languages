@@ -35,7 +35,7 @@ Using the module operation with `n%2==0` comparison.
 
 # Bit setting and clearing (method 1)
 
-I want to change the 6th bit of 8.
+I want to clear the 6th bit of 8 and set the 7th bit.
 
 binary sequence: `00001000`
 
@@ -43,7 +43,12 @@ bit mask: `000001000`
 
 operation:
 
-00001000 |
+00001000 &
+
 00000100 =
---------
-00001100 the 6th bit has been set.
+
+00000000 | the 6th bit has been cleared.
+
+00000100 =
+
+00000100 the 7th bit has been set.
