@@ -9,5 +9,10 @@ Thank you!!
 
 Happy coding!!
 
+# Conventions
+
+- Global variables are prefixed with `g_`
+- Pointers are prefixed with `p`
+
 ![](c++.png)
 

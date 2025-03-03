@@ -30,6 +30,10 @@
 
 #include <iostream>
 
+/*
+ These namespaces and functions are global, Preferr to declare global functions/variables inside
+ namespaces.
+*/
 namespace dedicated {
     void myFcn(int x)
     {
