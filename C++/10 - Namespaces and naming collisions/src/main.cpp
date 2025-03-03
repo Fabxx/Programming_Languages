@@ -18,6 +18,7 @@
  * 
  *      NOTES:
  *              -Anything global is considered to be in a "global namespace"
+                -Nested Namespaces are allowed.
  * 
  * 
  * @version 0.1
@@ -29,20 +30,31 @@
 
 #include <iostream>
 
-using namespace dedicated;
-
 namespace dedicated {
     void myFcn(int x)
     {
         std::cout << x;
     }
 
+    namespace inner {
+        void innerPrint() {
+            std::cout << "Inner print invoked\n";
+        }
+    }
+
 };
 
+using namespace dedicated;
 
 int main(int argc, char *argv[])
 {
     dedicated::myFcn(4);
 
     myFcn(7); //does not require to write the name of the namespace.
+
+    dedicated::inner::innerPrint(); //calling nested namespace.
+
+    namespace ref = dedicated::inner; // can also create an alias to the namespace we want to use. 
+
+    ref::innerPrint();
 }
