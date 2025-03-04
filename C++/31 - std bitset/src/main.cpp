@@ -60,9 +60,11 @@
  {
     // NOTE: Bitset argument indicates the size, however the size is always interpreted as BITS, not BYTES.
     constexpr std::uint8_t reg {0b1111'0000};
+    constexpr std::uint32_t reg2 {0x00000000};
     
     std::bitset<8> regBits {reg};
     std::bitset<8> newReg {reg};
+    std::bitset<sizeof(uint32_t)*8> bits;
 
     regBits.set(2); // set position 2 of the 32 bit value to 1.
 
