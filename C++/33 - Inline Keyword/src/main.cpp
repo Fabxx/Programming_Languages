@@ -54,6 +54,22 @@ constexpr void print2() //implicitly inline
 
 }
 
+class myclass
+{
+  public:
+    void func()
+    {
+      std::cout << "some inline stuff\n"; //already inline, defined in class
+    }
+
+    void func2(); // not inline, declared but not defined.
+};
+
+inline void myclass::func2()
+{
+
+}
+
  int main()
  {
       
