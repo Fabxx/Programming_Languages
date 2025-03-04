@@ -23,7 +23,7 @@
             The following functions are implicitly inline:
 
           - Functions defined inside a class, struct, or union type definition
-          - Constexpr / consteval functions (NOT VARIABLES)
+          - Constexpr / consteval functions (NOT VARIABLES) (if a func cannot be constexpr, then you explicitly use inline)
           - Functions implicitly instantiated from function templates
           
 
@@ -47,6 +47,11 @@
 inline void print() 
 {
     std::cout << "a very small function\n";
+}
+
+constexpr void print2() //implicitly inline
+{
+
 }
 
  int main()

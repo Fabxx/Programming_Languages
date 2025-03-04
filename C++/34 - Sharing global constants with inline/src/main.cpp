@@ -14,6 +14,11 @@
                optimization purposes
 
                If you need global constants and your compiler is C++17 capable, prefer defining inline constexpr global variables in a header file.
+
+               So, inline variables are also extern
+                   constexpr functions are also inline
+
+                   if functions can't be constexpr, use inline explicitly
  * @version 0.1
  * @date 2024-12-12
  * 
