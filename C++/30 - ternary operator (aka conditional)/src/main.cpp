@@ -16,6 +16,8 @@
         
         For complex statements it's best to not use the ternary operator
 
+        Syntax: condition ? false statement : true statement
+
  * @version 0.1
  * @date 2024-12-12
  * 
@@ -40,7 +42,7 @@
       be resolved first.
    */
 
-   std::cout << (a == 10) ? "yay\n" : "nay\n";
+   std::cout << (a == 10) ? "nay\n" : "yay\n";
 
    /*
        to avoid, use parhenteses to prioritize the ternary
