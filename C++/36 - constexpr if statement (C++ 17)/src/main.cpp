@@ -9,7 +9,9 @@
            In this case, at compile time the first If condition will be discarded, only the else will remain
            in the instructions
 
-           Use this when comparisons are made on a constant value
+           Use this when comparisons are made on a constant value, or on a flags that you know on certain
+           systems will have a specific condition as a result. The CPU won't have to do the compare
+           instruction at runtime.
  * @version 0.1
  * @date 2024-12-12
  * 
