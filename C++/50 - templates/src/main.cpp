@@ -49,6 +49,7 @@
  */
 #include <iostream>
 #include <type_traits>
+#include "header.hpp"
 
 // function of any Type with arguments of any type
 template<typename T>
@@ -101,6 +102,8 @@ int main()
   std::cout << generic<int>(10, 4.5) << "\n"; // one type is deducted, the other is explicit. Both can be deducted or explicit.
 
   std::cout << foward(10, 5.6f) << "\n"; // auto will resolve as int since result is int.
+
+  std::cout << headerFunction<>(10) << "\n"; // calling template function from header file.
 }
 
 
